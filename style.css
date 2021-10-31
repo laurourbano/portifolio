@@ -38,7 +38,7 @@ form input[type=submit]{
     transition: 1s;
 }
 form input[type=submit]:hover{
-    background-color: #205052;
+    background-color: #1a4647;
 }
 form i{
     position: relative;
