@@ -8,13 +8,32 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="imagem/png" href="img/meufavicon.png"/>
     <title>Tela de login</title>
+    <script src="https://kit.fontawesome.com/abaa35b434.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <form action="">
         <h3>Entrar</h3>
-        <input type="text" nome="email" placeholder="Seu e-mail..." />
-        <input type="password" nome="acao" placeholder="Digite sua senha..." />
+        <i class="fas fa-envelope-square"></i><input type="text" id="email" nome="email"  placeholder="Seu e-mail..."/>
+        <i class="fas fa-key"></i><input type="password" id="password" nome="acao" placeholder="Digite sua senha..." />
         <input type="submit" name="action" value="Enviar" />
     </form>
+    <Script>
+        var email = document.getElementById("email");
+        email.addEventListener("focus",()=>{
+            email.style.borderColor = "DarkCyan";
+        });
+        var email = document.getElementById("email");
+        email.addEventListener("blur",()=>{
+            email.style.borderColor = "#ccc";
+        });
+        var password = document.getElementById("password");
+        password.addEventListener("focus",()=>{
+            password.style.borderColor = "DarkCyan";
+        });
+        var password = document.getElementById("password");
+        password.addEventListener("blur",()=>{
+            password.style.borderColor = "#ccc";
+        });
+    </Script>
 </body>
 </html>
