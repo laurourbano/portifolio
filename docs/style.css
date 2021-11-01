@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;}
+body {
+	margin: 0 auto;
+	padding: 25px 0;
+	width: 940px;
+	font: 13px Arial, Verdana, century;
+	background-color: #FAEBD7;
+	color: #363636;
+}
+header h1 {
+	text-align: justify;
+}
+header h2{
+	text-align: justify;
+	line-height: 70px;
+}
+header, nav, section, article, footer {
+	display: block;
+}
+h1{
+	font-size: 30px;
+	line-height:20px;
+	padding: 20px 0;
+	width: 940px;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	float: left;
+}
+nav ul li a{
+	display:block;
+	height: 25px;
+	padding: 0 30px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: justify;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 2px;
+	color: #2F4F4F;
+}
+nav ul li a:hover{
+	color: #0000FF;
+}
+nav ul li a.selecionado{
+	background-color: #0000FF;
+	margin-left: 10px;
+	color: #EEC900;
+	height: 25px;
+	line-height:  30px;
+	margin-top: 2px;
+	font-weight: bold;
+	margin-left: 0px;
+}
+section#introdução{
+	height: 235x;
+	width: 940px;
+	background: url('../img/img2.jpg') right top no-repeat #DDEEEE;
+	margin-top: 60px;
+	padding: 10px;
+}
+section#introdução hgroup h1 {
+	font-size: 45px;
+	text-align: justify;
+	line-height: 30px;
+	color: #00BFFF;
+}
+section#introdução hgroup h2{
+	font-size: 30px;
+	line-height:30px;
+	color: #87CEEB;
+}
+section#introdução p {
+	padding-top: 35px;
+	font-style: bold;
+	font-weight: bold;
+	font-size: 20px;
+	width: 940px;
+	color: #B0E0E6;
+}
+footer {
+	font-family: sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	color: #2F4F4F;
+	text-align:justify;
+}
+article header h1 {
+	font-size: 20px;
+	text-align:justify;
+	line-height: 40px;
+	margin-top: 20px;
+	width: 620px;
+	padding: 0;
+}
+article header h2 {
+	font-size: 15px;
+	text-align:justify;
+	line-height: 30px;
+	margin-top: 5px;
+	width: 620px;
+	padding: 0;
+}
+article p{
+	margin-bottom: 10px;
+	padding-right: 10px;
+	width: 940px;
+	text-align: justify;
+}
+article header p{
+	font-size: 15px;
+	line-height: 30px;
+	font-style:italic;
+	margin-bottom: 0px;
+	text-align: justify;
+}
