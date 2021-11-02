@@ -11,29 +11,31 @@
     <script src="https://kit.fontawesome.com/abaa35b434.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form action="">
-        <h3>Entrar</h3>
-        <input type="text" id="email" nome="email"  placeholder="&#128231; Digite seu e-mail..."/>
-        <input type="password" id="password" nome="acao" placeholder="&#128273; Digite sua senha..." />
-        <input type="submit" name="action" value="Enviar" />
-    </form>
-    <Script>
-        var email = document.getElementById("email");
-        email.addEventListener("focus",()=>{
-            email.style.borderColor = "DarkCyan";
-        });
-        var email = document.getElementById("email");
-        email.addEventListener("blur",()=>{
-            email.style.borderColor = "#ccc";
-        });
-        var password = document.getElementById("password");
-        password.addEventListener("focus",()=>{
-            password.style.borderColor = "DarkCyan";
-        });
-        var password = document.getElementById("password");
-        password.addEventListener("blur",()=>{
-            password.style.borderColor = "#ccc";
-        });
-    </Script>
+    <fieldset>
+        <legend><h1>Entrar</h1></legend>
+        <form action="">
+            <input type="text" id="email" nome="email"  placeholder="&#128231; Digite seu e-mail..."/>
+            <input type="password" id="password" nome="acao" placeholder="&#128273; Digite sua senha..." />
+            <input type="submit" name="action" value="Enviar" />
+        </form>
+        <Script>
+            var email = document.getElementById("email");
+            email.addEventListener("focus",()=>{
+                email.style.borderColor = "DarkCyan";
+            });
+            var email = document.getElementById("email");
+            email.addEventListener("blur",()=>{
+                email.style.borderColor = "#ccc";
+            });
+            var password = document.getElementById("password");
+            password.addEventListener("focus",()=>{
+                password.style.borderColor = "DarkCyan";
+            });
+            var password = document.getElementById("password");
+            password.addEventListener("blur",()=>{
+                password.style.borderColor = "#ccc";
+            });
+        </Script>
+    </fieldset>
 </body>
 </html>
