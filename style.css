@@ -6,6 +6,7 @@ fieldset{
     position: absolute;
     width: 400px;
     max-width: 90%;
+    padding: 50px;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -14,6 +15,7 @@ fieldset{
 }
 fieldset legend{
     margin: 0 auto;
+    font-size: 40px;
     border-radius: 8px;
     background: #6c0ca3;
     padding: 10px;
