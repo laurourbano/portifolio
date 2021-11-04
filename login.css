@@ -46,7 +46,7 @@ legend img{
 form{
     padding: 50px;
 }
-input[type="text"],[type="password"]{
+input[type="email"],[type="password"]{
     width: 100%;
     padding: 10px;
     background: none;
@@ -74,7 +74,7 @@ input[type="text"],[type="password"]{
     pointer-events: none;
     letter-spacing: 1px;
 }
-.campo input[type="text"]:focus~label, [type="password"]:focus~label, .campo input:valid~label{
+.campo input[type="email"]:focus~label, [type="password"]:focus~label, .campo input:valid~label, .campo input:invalid~label{
     top:-20px;
     transition: .5s;
     color: greenyellow;
