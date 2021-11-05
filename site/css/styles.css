@@ -130,6 +130,7 @@ header p{
     width: 120px;
     height: 120px;
     border: 1px solid #3f073a;
+    border-radius: 10px;
 }
 
 #experiencia{
