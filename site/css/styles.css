@@ -129,6 +129,7 @@ header p{
 #cursos img{
     width: 120px;
     height: 120px;
+    border: 1px solid #3f073a;
 }
 
 #experiencia{
