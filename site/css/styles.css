@@ -126,25 +126,21 @@ header p{
     text-decoration: none;
 }
 
+#cursos img{
+    width: 10em;
+    height: 10em;
+}
+
 #experiencia{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    text-align: center;
+    padding: 30px;
 }
 
 #experiencia h2{
     margin-bottom: 20px;
-}
-
-#experiencia ul li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-    padding: 10px 0;
-    text-align: center;
 }
 
 #contato{
@@ -217,6 +213,10 @@ footer a{
         flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
+    }
+
+    #cursos img{
+        
     }
 
     #experiencia{
