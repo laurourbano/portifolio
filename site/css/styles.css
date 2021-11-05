@@ -32,8 +32,9 @@ nav a{
     text-decoration: none;
     color: #ffffff;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 40px;
     font-family: 'Yellowtail', serif;
+    letter-spacing: .1em;
 }
 
 nav ul{
@@ -56,6 +57,8 @@ nav ul li a{
     width: 100%;
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
 }
 
 header{
@@ -63,7 +66,7 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: #74EBD5;
-    background-image: linear-gradient(135deg, #447aac 0%, #293881 100%);
+    background-image: linear-gradient(135deg, #821279 0%, #3c096b 80%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,6 +92,7 @@ header p{
     background-color: #191970d8;
     color: #ffffff;
 }
+
 #sobre h2{
     color: #ffffff;
 }
@@ -217,6 +221,7 @@ footer a{
 
     #experiencia{
         flex-direction: row;
+        width: 100%;
         flex-wrap: wrap;
         align-items: flex-start;
         max-width: 1000px;
