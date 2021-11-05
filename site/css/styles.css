@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    color: #1c1c1c;
+    color: #5d5d5d;
 }
 
 h1, h2, h3{
@@ -14,7 +14,7 @@ h1, h2, h3{
     color: #ffffff;
     text-decoration: none;
     padding: 10px 30px;
-    background-color: #3f073a;
+    background-color: #5d5d5d;
     font-size: .9em;
     border-radius: 3px;
 }
@@ -25,7 +25,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3f073a;
+    background-color: #383838;
 }
 
 nav a{
@@ -61,6 +61,11 @@ nav ul li a{
     font-size: 30px;
 }
 
+nav ul li a img{
+    width: 30px;
+    height: 30px;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -89,7 +94,7 @@ header p{
     align-items: center;
     text-align: center;
     padding: 10px 10px 20px 20px;
-    background-color: #3f073a;
+    background-color: #383838;
     color: #ffffff;
 }
 
@@ -129,7 +134,7 @@ header p{
 #cursos img{
     width: 120px;
     height: 120px;
-    border: 1px solid #3f073a;
+    border: 1px solid #383838;
     border-radius: 10px;
 }
 
@@ -160,7 +165,7 @@ header p{
 footer{
     text-align: center;
     padding: 10px;
-    background-color: #3f073a;
+    background-color: #383838;
     color: #ffffff;
 }
 
