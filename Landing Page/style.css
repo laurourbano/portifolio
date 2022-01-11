@@ -14,13 +14,14 @@ body {
 }
 .cabecalho{
     display: flex;
+    font-size: 26px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding: 30px;
 }
 .logo{
-    height: 72px;
+    height: 100px;
     border-radius: 7px;
 }
 .cabecalho-menu{
@@ -31,7 +32,7 @@ body {
 .cabecalho-menu-item{
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
-    size: 18px;
+    size: 32px;
     color: azure;
 }
 .cabecalho-menu-item:hover{
