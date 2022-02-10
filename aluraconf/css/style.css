@@ -1,0 +1,41 @@
+body {
+    background-image: url("/img/destaque.jpeg");
+    background-repeat: no-repeat;
+
+    overflow: auto;
+}
+
+#cabecalho {
+    height: 100px;
+    width: 100%;
+
+}
+
+#cabecalho ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+#cabecalho li {
+    background-color: rgba(117, 116, 116, 0.315);
+    color: #fff;
+    width: 120px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#cabecalho li:hover {
+    background-color: rgba(80, 78, 78, 0.452);
+    color: #000;
+    width: 120px;
+    padding: 20px;
+    margin: 15px;
+}
+
+#cabecalho a {
+    text-decoration: none;
+}
