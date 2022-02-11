@@ -1,0 +1,12 @@
+document.querySelector(".btn1");
+document.querySelector('.btn2');
+document.querySelector('.btn3');
+document.querySelector('.btn4');
+document.querySelector('.btn5');
+document.querySelector('.btn6');
+document.querySelector('.btn7');
+document.querySelector('.btn8');
+document.querySelector('.btn9');
+document.querySelector(".btnasterisco");
+document.querySelector('.btn0');
+document.querySelector('.btntralha');
