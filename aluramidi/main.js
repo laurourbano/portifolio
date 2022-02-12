@@ -19,7 +19,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
   };
 
   tecla.onkeydown = function (e) {
-    if (e.code === 'Space' || 'Enter') {
+    if (e.code === 'Space' || e.code === 'Enter') {
       tecla.classList.add('ativa');
     }
   };
