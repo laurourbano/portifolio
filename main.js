@@ -5,7 +5,7 @@
       textInput.select();
       document.execCommand('botao');
     });
-
+console.log(copyButton.value)
 
 //const texto = document.querySelectorAll('.texto');
 //const span = document.querySelectorAll('.span');
