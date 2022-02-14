@@ -1,8 +1,17 @@
+    const textInput = document.getElementById('texto');
+    const copyButton = document.getElementById('botao');
+
+    copyButton.addEventListener('click', ()=> {
+      textInput.select();
+      document.execCommand('copy');
+    });
+
+
 //const texto = document.querySelectorAll('.texto');
 //const span = document.querySelectorAll('.span');
 //const botao = document.querySelectorAll('.botao');
 
-function copiaTexto(){
+/*function copiaTexto(){
     const texto = document.querySelectorAll('.texto');
     const span = document.querySelectorAll('.span');
     const botao = document.querySelectorAll('.botao');
@@ -10,7 +19,7 @@ function copiaTexto(){
     document.write(tudo);
     };
 
-copiaTexto();
+copiaTexto();*/
 /*var textarea    = document.getElementById("texto");
     var answer      = document.getElementById("copyAnswer");
     var copy        = document.getElementById("copyBlock");
