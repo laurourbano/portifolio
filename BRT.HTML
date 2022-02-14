@@ -176,6 +176,16 @@ Utilizar o canal próprio para comunicado de ausência.</textarea>
 
     <script type="text/javascript" src="main.js"></script>
 
+     <script type="text/javascript">
+        const textInput = document.getElementByClassName('.texto');
+        const copyButton = document.getElementByClassName('.botao');
+
+        copyButton.addEventListener('click', ()=> {
+          textInput.select();
+          document.execCommand('copy');
+        });
+    </script>
+    
 </body>
 
 </html>
