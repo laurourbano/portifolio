@@ -1,12 +1,12 @@
-    const textInput = document.getElementById('texto');
+    /*const textInput = document.getElementById('texto');
     const copyButton = document.getElementById('botao');
 
-    copyButton.addEventListener('click', function()=> {
+    function copiaTexto () {copyButton.addEventListener('click', function()=> {
       textInput.select();
       document.execCommand('botao');
     });
 console.log(copyButton.value)
-
+}
 //const texto = document.querySelectorAll('.texto');
 //const span = document.querySelectorAll('.span');
 //const botao = document.querySelectorAll('.botao');
