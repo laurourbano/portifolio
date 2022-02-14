@@ -20,7 +20,7 @@ console.log(copyButton.value)
     };
 
 copiaTexto();*/
-/*var textarea    = document.getElementById("texto");
+    var textarea    = document.getElementById("texto");
     var answer      = document.getElementById("copyAnswer");
     var copy        = document.getElementById("copyBlock");
 
@@ -64,7 +64,7 @@ copiaTexto();*/
     var answer10      = document.getElementById("copyAnswer10");
     var copy10        = document.getElementById("copyBlock10");*/
 
-/*copy.addEventListener('click', function(e) {
+copy.addEventListener('click', function(e) {
         textarea.select();
             try {
                 var successful = document.execCommand('copy');
@@ -173,4 +173,4 @@ copiaTexto();*/
             } catch (err) {
                 answer10.innerHTML = 'Navegador sem suporte!';
             }
-    });*/
+    });
