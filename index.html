@@ -4,38 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset-css.css">
+    <title>Document</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="imagem/png" href="img/meufavicon.png">
-    <title>Tela de login</title>
-    <script src="https://kit.fontawesome.com/abaa35b434.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="imagem/png" href="meufavicon.png">
 </head>
 <body>
-    <fieldset>
-        <legend><h1>Entrar</h1></legend>
-        <form action="">
-            <input type="email" id="email" nome="email"  placeholder="&#128231; Digite seu e-mail..." required/>
-            <input type="password" id="password" nome="acao" placeholder="&#128273; Digite sua senha..." required/>
-            <input type="submit" name="action" value="Enviar" />
-        </form>
-        <Script>
-            var email = document.getElementById("email");
-            email.addEventListener("focus",()=>{
-                email.style.borderColor = "DarkCyan";
-            });
-            var email = document.getElementById("email");
-            email.addEventListener("blur",()=>{
-                email.style.borderColor = "#ccc";
-            });
-            var password = document.getElementById("password");
-            password.addEventListener("focus",()=>{
-                password.style.borderColor = "DarkCyan";
-            });
-            var password = document.getElementById("password");
-            password.addEventListener("blur",()=>{
-                password.style.borderColor = "#ccc";
-            });
-        </Script>
-    </fieldset>
+    <h1>Matérias para o primeiro semestre de 2022!</h1>
+    <form action="/index.js" method="get">
+        
+        <p>31/01/2022 a 28/02/2022<br>
+        <input type="checkbox" name="APLICAÇÕES PARA INTERNET" id="ai">
+        <label for="ai"> APLICAÇÕES PARA INTERNET </label></p>
+    
+        <p>31/01/2022 a 28/02/2022<br>
+        <input type="checkbox" name="PROJETO INTEGRADO DE GESTÃO DE PROJETOS E DE DADOS" id="pigpd">
+        <label for="pigpd"> PROJETO INTEGRADO DE GESTÃO DE PROJETOS E DE DADOS </label></p>
+
+        <p>31/01/2022 a 30/06/2022<br>
+        <input type="checkbox" name="PROGRAMAÇÃO DE COMPUTADORES" id="pc">
+        <label for="pc"> PROGRAMAÇÃO DE COMPUTADORES </label></p>
+
+        <p>01/03/2022 a 31/03/2022<br>
+        <input type="checkbox" name="SISTEMAS OPERACIONAIS" id="so">
+        <label for="so"> SISTEMAS OPERACIONAIS </label></p>
+
+        <p>01/04/2022 a 30/04/2022<br>
+        <input type="checkbox" name="PROJETO DE SISTEMA DE INFORMAÇÃO" id="psi">
+        <label for="psi"> PROJETO DE SISTEMA DE INFORMAÇÃO </label></p>
+
+        <p>01/05/2022 a 31/05/2022<br>
+        <input type="checkbox" name="REDES DE COMPUTADORES" id="redpc">
+        <label for="redpc"> REDES DE COMPUTADORES </label></p>
+        
+        <p>01/05/2022 a 31/05/2022<br>
+        <input type="checkbox" name="PROJETO INTEGRADO EM GESTÃO DE SISTEMAS DE INFORMAÇÃO" id="psgsi">
+        <label for="psgsi"> PROJETO INTEGRADO EM GESTÃO DE SISTEMAS DE INFORMAÇÃO </label></p>
+        
+        <p>01/06/2022 a 30/06/2022<br>
+        <input type="checkbox" name="SISTEMAS HIPERMÍDIA/MULTIMÍDIA" id="shm">
+        <label for="shm"> SISTEMAS HIPERMÍDIA/MULTIMÍDIA </label></p>
+
+        <p>01/06/2022 a 30/06/2022<br>
+        <input type="checkbox" name="PROJETO INTEGRADO DE PROGRAMAÇÃO E ORGANIZAÇÃO" id="pigo">
+        <label for="pigo"> PROJETO INTEGRADO DE PROGRAMAÇÃO E ORGANIZAÇÃO </label></p>
+
+        <p>01/06/2022 a 30/06/2022<br>
+        <input type="checkbox" name="DIVERSIDADE ÉTNICO-CULTURAL" id="dec">
+        <label for="dec"> DIVERSIDADE ÉTNICO-CULTURAL </label></p>
+
+        <p>01/06/2022 a 30/06/2022<br>
+        <input type="checkbox" name="ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES" id="oac">
+        <label for="oac"> ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES </label></p>
+
+    </form>
 </body>
 </html>

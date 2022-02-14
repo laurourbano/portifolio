@@ -1,57 +1,39 @@
-body{
-    background: rgba(29, 2, 59, 0.904);
-    color: #fff;
+body {
+    font-family: 'arial';
+    background-color: #c7e6ee;
 }
-fieldset{
-    position: absolute;
-    width: 400px;
-    max-width: 90%;
-    padding: 50px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background: #6c0ca3;
-    border-radius: 8px;
-}
-fieldset legend{
-    margin: 0 auto;
-    font-size: 40px;
-    border-radius: 8px;
-    background: #6c0ca3;
-    padding: 10px;
-}
-form{
-    width: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    color: #5F9EA0;
-    font-weight: bold;   
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    box-sizing: border-box;
-}
-form input[type="email"],
-form input[type="password"]{
-    width: 100%;
-    height: 45px;
-    border: 1px solid rgba(204, 204, 204, 0.616);
-    border-radius: 10px;
-    padding-left: 10px;
-    margin: 20px auto;
-    outline: 0;
-}
-form input[type=submit]{
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-    background: #042d2e;
-    border: 0;
-    border-radius: 30px;
-    transition: 1s;
-    outline: 0;
-    color: #fff;
 
+h1{
+    color: rgb(57, 13, 87);
+    text-align: center;
 }
-form input[type=submit]:hover{
-    background-color: #1a4647;
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20vh;
+}
+
+p input {
+    min-width: 30px;
+    min-height: 30px;
+    vertical-align: middle;
+}
+
+label {
+    color: rgb(114, 25, 141);
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+p {
+    padding-left: 1em;
+    color: rgb(31, 75, 78);
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+label:hover{
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
