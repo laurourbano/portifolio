@@ -1,78 +1,211 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport. content=.width=device-width, initial-scale=1.0'>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport. content=.width=device-width, initial-scale=1.0" />
     <title>BRT CRF-PR</title>
-    <link rel="icon" type="imagem/png" href="meufavicon.png">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="icon" type="imagem/png" href="meufavicon.png" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <h2>3236 CONFERÊNCIA DE BAIXA DE RT WEB:</h2>
-    <h3>Ocorrência baixa de Contrato de Trabalho (web): </h3>
-    <ol><li>Abrir protocolo e visualizar arquivos.</li></ol>
+    <h3>Ocorrência baixa de Contrato de Trabalho (web):</h3>
+    <ol>
+      <li>Abrir protocolo e visualizar arquivos.</li>
+    </ol>
     <p>Caso esteja correto:</p>
-    <p>No protocolo, Aba dados da firma, Responsável técnico, Salvar alteração do contrato.</p>
-    <p>Clicar em Evolução. </p>
-    <p>Local: 101 (Cadastro Baixa RT Web) <br> Situação: 16 (Deferido Baixa RT Web) <br> Julgamento: 31 (Efetivado Baixa RT Web).</p>
-    <p>Fazer download dos arquivos e do protocolo e migrar para o GED (No GED renomear Baixa de RT web + data protocolo formato AAAA_MM_DD)</p>
-    <p>Abrir o cadastro da empresa para verificar situação do estabelecimento:</p>
-    <ol><li>inativar o status 210 e incluir status atual da empresa, com horários e prazo.</li><li>avaliar necessidade de despacho de ofício:</li></ol>
-        <p>Evolução do Protocolo pós ofício:</p>
-    <p>Local da Evolução: 8 – cadastro <br> Situação: 19 – oficiado <br> Julgamento: 21 - arquivamento do procedimento <br> </p>
-    <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto" cols="50" rows="2" readonly>Emitido ofício nº ****</textarea>
-    <button class="botao botao" id="copyBlock">Clique para copiar</button> <span class="span" id="copyAnswer"></span>
-
-    <h3>BRT solicitada dentro do prazo? (30 dias):</h3>
-    <ol><li>validar se a data colocada como de último dia trabalhado está compatível com a data do(s) documento(s) apresentado(s). Em caso de divergência, considerar sempre data do documento</li><li>avaliar o prazo entre a data da baixa e do protocolo, ultrapassando 30 dias encaminhar a ética via protocolo interno:</li></ol>
-    <p>Local da Evolução * 8 - cadastro <br>
-    Situação * 10 -  encaminhado <br>
-    Julgamento * 28 - para análise dep. Ética <br>
-    Local Encaminhar * 11 - ética <br>
+    <p>
+      No protocolo, Aba dados da firma, Responsável técnico, Salvar alteração do
+      contrato.
+    </p>
+    <p>Clicar em Evolução.</p>
+    <p>
+      Local: 101 (Cadastro Baixa RT Web) <br />
+      Situação: 16 (Deferido Baixa RT Web) <br />
+      Julgamento: 31 (Efetivado Baixa RT Web).
+    </p>
+    <p>
+      Fazer download dos arquivos e do protocolo e migrar para o GED (No GED
+      renomear Baixa de RT web + data protocolo formato AAAA_MM_DD)
+    </p>
+    <p>
+      Abrir o cadastro da empresa para verificar situação do estabelecimento:
+    </p>
+    <ol>
+      <li>
+        inativar o status 210 e incluir status atual da empresa, com horários e
+        prazo.
+      </li>
+      <li>avaliar necessidade de despacho de ofício:</li>
+    </ol>
+    <p>Evolução do Protocolo pós ofício:</p>
+    <p>
+      Local da Evolução: 8 – cadastro <br />
+      Situação: 19 – oficiado <br />
+      Julgamento: 21 - arquivamento do procedimento <br />
     </p>
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto1" cols="50" rows="2" readonly>PROFISSIONAL PROTOCOLOU BAIXA EM PRAZO SUPERIOR A 30 DIAS, SENDO QUE SEU AFASTAMENTO FOI EM</textarea>
-    <button class="botao botao1" id="copyBlock1">Clique para copiar</button> <span class="span" id="copyAnswer1"></span>
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto"
+      cols="50"
+      rows="2"
+      readonly
+    >
+Emitido ofício nº ****</textarea
+    >
+    <button class="botao botao" id="copyBlock">Clique para copiar</button>
+    <span class="span" id="copyAnswer"></span>
 
-    <p>Local da Evolução * 8 - cadastro <br>
-    Situação * 10 -  encaminhado <br>
-    Julgamento * 28 - para análise dep. Ética <br>
-    Local Encaminhar * 11 - ética</p>
-    <p>Parecer:</p> 
-    <textarea type="text" class="texto" name="texto" id="texto2" cols="50" rows="2" readonly>NÃO APRESENTOU DOCUMENTOS OBRIGATÓRIOS PARA BAIXA NO PRAZO DE 30 DIAS DO PROTOCOLO.</textarea>
-    <button class="botao botao2" id="copyBlock2">Clique para copiar</button> <span class="span" id="copyAnswer2"></span>
+    <h3>BRT solicitada dentro do prazo? (30 dias):</h3>
+    <ol>
+      <li>
+        validar se a data colocada como de último dia trabalhado está compatível
+        com a data do(s) documento(s) apresentado(s). Em caso de divergência,
+        considerar sempre data do documento
+      </li>
+      <li>
+        avaliar o prazo entre a data da baixa e do protocolo, ultrapassando 30
+        dias encaminhar a ética via protocolo interno:
+      </li>
+    </ol>
+    <p>
+      Local da Evolução * 8 - cadastro <br />
+      Situação * 10 - encaminhado <br />
+      Julgamento * 28 - para análise dep. Ética <br />
+      Local Encaminhar * 11 - ética <br />
+    </p>
+    <p>Parecer:</p>
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto1"
+      cols="50"
+      rows="2"
+      readonly
+    >
+PROFISSIONAL PROTOCOLOU BAIXA EM PRAZO SUPERIOR A 30 DIAS, SENDO QUE SEU AFASTAMENTO FOI EM</textarea
+    >
+    <button class="botao botao1" id="copyBlock1">Clique para copiar</button>
+    <span class="span" id="copyAnswer1"></span>
+
+    <p>
+      Local da Evolução * 8 - cadastro <br />
+      Situação * 10 - encaminhado <br />
+      Julgamento * 28 - para análise dep. Ética <br />
+      Local Encaminhar * 11 - ética
+    </p>
+    <p>Parecer:</p>
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto2"
+      cols="50"
+      rows="2"
+      readonly
+    >
+NÃO APRESENTOU DOCUMENTOS OBRIGATÓRIOS PARA BAIXA NO PRAZO DE 30 DIAS DO PROTOCOLO.</textarea
+    >
+    <button class="botao botao2" id="copyBlock2">Clique para copiar</button>
+    <span class="span" id="copyAnswer2"></span>
 
     <h3>Caso seja DESISTÊNCIA AO INVÉS DE BAIXA:</h3>
-    <p>No protocolo, inicialmente alterar o campo “Dados do Protocolo”, acima das informações padrão, incluir ***DESISTÊNCIA DE RT***;</p>
+    <p>
+      No protocolo, inicialmente alterar o campo “Dados do Protocolo”, acima das
+      informações padrão, incluir ***DESISTÊNCIA DE RT***;
+    </p>
     <p>Clicar em Evolução.</p>
-    <p>Local: 101 (Cadastro Baixa RT Web) <br> Situação: 16 (Deferido Baixa RT Web) <br> Julgamento: 31 (Efetivado Baixa RT Web) </p>
-    <p>Parecer: </p>
-    <textarea type="text" class="texto" name="texto" id="texto3" cols="50" rows="4" readonly>PROCEDIMENTO TRATA-SE DE DESISTÊNCIA DA RT UMA VEZ QUE O INGRESSO SERIA APRECIADO PELO PLENÁRIO.
-DESISTÊNCIA EFETIVADA.</textarea>
-    <button class="botao botao3" id="copyBlock3">Clique para copiar</button> <span class="span" id="copyAnswer3"></span>
+    <p>
+      Local: 101 (Cadastro Baixa RT Web) <br />
+      Situação: 16 (Deferido Baixa RT Web) <br />
+      Julgamento: 31 (Efetivado Baixa RT Web)
+    </p>
+    <p>Parecer:</p>
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto3"
+      cols="50"
+      rows="4"
+      readonly
+    >
+PROCEDIMENTO TRATA-SE DE DESISTÊNCIA DA RT UMA VEZ QUE O INGRESSO SERIA APRECIADO PELO PLENÁRIO.
+DESISTÊNCIA EFETIVADA.</textarea
+    >
+    <button class="botao botao3" id="copyBlock3">Clique para copiar</button>
+    <span class="span" id="copyAnswer3"></span>
 
-    <p>Fazer download dos arquivos e do protocolo e migrar para o GED (No GED renomear Desistência de RT web + data protocolo formato AAAA_MM_DD) </p>
-    <p>Abrir o cadastro da empresa para verificar situação do estabelecimento considerando DESISTÊNCIA: </p>
-    <ol><li>inativar o status 100, 101, 105 ou 108 de registro ou ingresso aprovado Ad ou em andamento e, incluir status atual da empresa, com horários e prazo.</li></ol>
-    <h3>Caso já tenha regularizado a baixa de RT de forma presencial ou por meio de outro protocolo web conferido: </h3>
+    <p>
+      Fazer download dos arquivos e do protocolo e migrar para o GED (No GED
+      renomear Desistência de RT web + data protocolo formato AAAA_MM_DD)
+    </p>
+    <p>
+      Abrir o cadastro da empresa para verificar situação do estabelecimento
+      considerando DESISTÊNCIA:
+    </p>
+    <ol>
+      <li>
+        inativar o status 100, 101, 105 ou 108 de registro ou ingresso aprovado
+        Ad ou em andamento e, incluir status atual da empresa, com horários e
+        prazo.
+      </li>
+    </ol>
+    <h3>
+      Caso já tenha regularizado a baixa de RT de forma presencial ou por meio
+      de outro protocolo web conferido:
+    </h3>
     <p>No protocolo, clicar em alterar para incluir a inscrição da empresa.</p>
     <p>Clicar em Evolução.</p>
-    <p>Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 21 (Arquivamento do procedimento) </p>
-    <p>Parecer:</p> 
-    <textarea type="text" class="texto" name="texto" id="texto4" cols="50" rows="4" readonly>PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROCEDIMENTO PRESENCIAL DIA ** / 
+    <p>
+      Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 21
+      (Arquivamento do procedimento)
+    </p>
+    <p>Parecer:</p>
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto4"
+      cols="50"
+      rows="4"
+      readonly
+    >
+PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROCEDIMENTO PRESENCIAL DIA ** / 
 
-PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROTOCOLO ANTERIOR DE BAIXA DE RT WEB</textarea>
-    <button class="botao botao4" id="copyBlock4">Clique para copiar</button> <span class="span" id="copyAnswer4"></span>
+PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROTOCOLO ANTERIOR DE BAIXA DE RT WEB</textarea
+    >
+    <button class="botao botao4" id="copyBlock4">Clique para copiar</button>
+    <span class="span" id="copyAnswer4"></span>
 
-    <p>Salvar protocolo. Não há necessidade de fazer download do arquivo e do protocolo e migrar para o GED	</p>
-    <h3>Caso procedimento (arquivo) esteja errado: </h3>
+    <p>
+      Salvar protocolo. Não há necessidade de fazer download do arquivo e do
+      protocolo e migrar para o GED
+    </p>
+    <h3>Caso procedimento (arquivo) esteja errado:</h3>
     <p>No protocolo, Clicar em Evolução:</p>
     <p>Se faltar documento:</p>
-    <p>Local: 101 (Cadastro Baixa RT Web) / Situação: 25 (Falta Documento Baixa RT Web) / Julgamento: 18 (Solicitação ao Requerente) / Local Encaminhamento: 32 (CRF-PR EM CASA)</p>
+    <p>
+      Local: 101 (Cadastro Baixa RT Web) / Situação: 25 (Falta Documento Baixa
+      RT Web) / Julgamento: 18 (Solicitação ao Requerente) / Local
+      Encaminhamento: 32 (CRF-PR EM CASA)
+    </p>
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto5" cols="50" rows="15" readonly>- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto5"
+      cols="50"
+      rows="15"
+      readonly
+    >
+- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
 - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA EMPRESA OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
     OU
 - CASO AINDA NÃO POSSUA TODOS OS DOCUMENTOS, PODERÁ APRESENTAR  FORMULÁRIO DE REQUERIMENTO PREENCHIDO E ASSINADO (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO);
@@ -80,16 +213,36 @@ PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROTOCOLO ANTERIOR DE BAIXA DE RT WEB</
 
 * DEVERÁ ENCAMINHAR OS DOCUMENTOS NO PRAZO DE 01 (UM) DIA ÚTIL, PELO MENU DE PROTOCOLOS (TELA INICIAL), PROTOCOLOS AGUARDANDO RESPOSTA.
     FAVOR CONSULTAR PASSO A PASSO NO LINK https://www.crf-pr.org.br/noticia/visualizar/8459
-***LEMBRANDO QUE MARCAR NO FORMULÁRIO QUE NÃO ESTÁ APRESENTANDO ALGUM DOCUMENTO, NÃO ISENTA DE APRESENTAÇÃO POSTERIOR (EM ATÉ 30 DIAS) CONFORME DESCRITO NO FORMULÁRIO.</textarea>
-    <button class="botao botao5" id="copyBlock5">Clique para copiar</button> <span class="span" id="copyAnswer5"></span>
-   
-    <h3>OCORRÊNCIA BAIXA DE RT INFORMANDO FALTA DE DOCUMENTOS NO NOVO FORMULÁRIO (WEB): </h3>
+***LEMBRANDO QUE MARCAR NO FORMULÁRIO QUE NÃO ESTÁ APRESENTANDO ALGUM DOCUMENTO, NÃO ISENTA DE APRESENTAÇÃO POSTERIOR (EM ATÉ 30 DIAS) CONFORME DESCRITO NO FORMULÁRIO.</textarea
+    >
+    <button class="botao botao5" id="copyBlock5">Clique para copiar</button>
+    <span class="span" id="copyAnswer5"></span>
+
+    <h3>
+      OCORRÊNCIA BAIXA DE RT INFORMANDO FALTA DE DOCUMENTOS NO NOVO FORMULÁRIO
+      (WEB):
+    </h3>
     <p>Abrir protocolo e visualizar arquivo.</p>
-    <p>No protocolo, Aba dados da firma, Responsável técnico, Salvar alteração do contrato.</p>
+    <p>
+      No protocolo, Aba dados da firma, Responsável técnico, Salvar alteração do
+      contrato.
+    </p>
     <p>Clicar em Evolução.</p>
-    <p>Local: 101 (Cadastro Baixa RT Web) / Situação: 13 (Informado ao Requerente falta de documento) / Julgamento: 31 (Efetivado Baixa RT Web).</p>
+    <p>
+      Local: 101 (Cadastro Baixa RT Web) / Situação: 13 (Informado ao Requerente
+      falta de documento) / Julgamento: 31 (Efetivado Baixa RT Web).
+    </p>
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto6" cols="50" rows="18" readonly>DOCUMENTOS FALTANTES:
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto6"
+      cols="50"
+      rows="18"
+      readonly
+    >
+DOCUMENTOS FALTANTES:
 - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA EMPRESA OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
 - FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
 
@@ -99,18 +252,43 @@ PROCEDIMENTO DE BAIXA DE RT EFETIVADO EM PROTOCOLO ANTERIOR DE BAIXA DE RT WEB</
         
 ATENÇÃO. REALIZADA A BAIXA DE RESPONSABILIDADE TÉCNICA DO ESTABELECIMENTO EM CARÁTER ***PROVISÓRIO***. O PROFISSIONAL ESTÁ CIENTE DE QUE RESPONDERÁ POR TODAS AS INFORMAÇÕES PRESTADAS, E QUE NO PRAZO MÁXIMO DE 30 (TRINTA) DIAS DEVERÁ APRESENTAR OS DOCUMENTOS FALTANTES, SOB PENA DE RESPONDER A PROCESSO ÉTICO DISCIPLINAR.
 
-– PARA APRESENTAR OS DOCUMENTOS O PROFISSIONAL DEVERÁ ACESSAR O CRF EM CASA E “EM PROTOCOLOS AGUARDANDO RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
-    <button class="botao botao" id="copyBlock6">Clique para copiar</button> <span class="span" id="copyAnswer6"></span>
+– PARA APRESENTAR OS DOCUMENTOS O PROFISSIONAL DEVERÁ ACESSAR O CRF EM CASA E “EM PROTOCOLOS AGUARDANDO RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea
+    >
+    <button class="botao botao" id="copyBlock6">Clique para copiar</button>
+    <span class="span" id="copyAnswer6"></span>
 
-    <p>Fazer download dos arquivos e do protocolo e migrar para o GED (No GED renomear Baixa de RT web + data protocolo formato AAAA_MM_DD)</p>
-    <p>Abrir o cadastro da PROFISSIONAL e incluir status 9451 - BAIXA DE RT COM DOCUMENTAÇÃO PENDENTE:</p>
-    <p>Colocar data de início = data do protocolo / data fim o prazo de 30 dias para programação de encaminhamento para ÉTICA caso o profissional não apresente os documentos faltantes no prazo e não justifique.</p>
+    <p>
+      Fazer download dos arquivos e do protocolo e migrar para o GED (No GED
+      renomear Baixa de RT web + data protocolo formato AAAA_MM_DD)
+    </p>
+    <p>
+      Abrir o cadastro da PROFISSIONAL e incluir status 9451 - BAIXA DE RT COM
+      DOCUMENTAÇÃO PENDENTE:
+    </p>
+    <p>
+      Colocar data de início = data do protocolo / data fim o prazo de 30 dias
+      para programação de encaminhamento para ÉTICA caso o profissional não
+      apresente os documentos faltantes no prazo e não justifique.
+    </p>
 
-    <h3>APÓS 48 HORAS SEM A CORREÇÃO DO PROCEDIMENTO: </h3>
+    <h3>APÓS 48 HORAS SEM A CORREÇÃO DO PROCEDIMENTO:</h3>
     <p>Abrir protocolo para cancelamento da ocorrência da BRT:</p>
-    <p>Local: 101 (Cadastro Baixa RT Web) / Situação: 17 (Indeferido por extrapolar o prazo) / Julgamento: 32 (Indeferido requerimento de baixa de RT).</p>
+    <p>
+      Local: 101 (Cadastro Baixa RT Web) / Situação: 17 (Indeferido por
+      extrapolar o prazo) / Julgamento: 32 (Indeferido requerimento de baixa de
+      RT).
+    </p>
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto7" cols="60" rows="22" readonly>INDEFERIDO REQUERIMENTO DE BAIXA.
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto7"
+      cols="60"
+      rows="22"
+      readonly
+    >
+INDEFERIDO REQUERIMENTO DE BAIXA.
 
 DOCUMENTOS SOLICITADOS PARA CORREÇÃO DO PROCEDIMENTO DE BAIXA DE RT NÃO FORAM ENVIADOS NO PRAZO DE 01 (UM) DIA ÚTIL DA RESPOSTA DO CRF-PR. 
 * DEVERÁ INICIAR NOVO REQUERIMENTO DE BAIXA DE RESPONSABILIDADE TÉCNICA, ANEXANDO TODOS OS DOCUMENTOS NECESSÁRIOS. 
@@ -123,218 +301,310 @@ MOTIVO DO INDEFERIMENTO:
     – FALTOU DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
 – FALTOU APRESENTAR A CTPS COM ANOTAÇÃO/DECLARAÇÃO DA TRANSFERÊNCIA, INDICANDO A DATA E O CNPJ PARA O QUAL FOI TRANSFERIDO; *DEVE SER EM FORMA DE DECLARAÇÃO COM PAPEL TIMBRADO OU NA CTPS. PORÉM, PARA AMBOS É OBRIGATÓRIO SER ASSINADA PELA EMPRESA*
 OU
-- CASO AINDA NÃO POSSUA TODOS OS DOCUMENTOS, PODERÁ APRESENTAR  FORMULÁRIO DE REQUERIMENTO PREENCHIDO E ASSINADO (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO);</textarea>
-    <button class="botao botao7" id="copyBlock7">Clique para copiar</button> <span class="span" id="copyAnswer7"></span>
+- CASO AINDA NÃO POSSUA TODOS OS DOCUMENTOS, PODERÁ APRESENTAR  FORMULÁRIO DE REQUERIMENTO PREENCHIDO E ASSINADO (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO);</textarea
+    >
+    <button class="botao botao7" id="copyBlock7">Clique para copiar</button>
+    <span class="span" id="copyAnswer7"></span>
 
-    <p>Fazer download dos arquivos e do protocolo e migrar para o GED. (No GED renomear Indeferimento de Baixa de RT web + data protocolo formato AAAA_MM_DD)</p>
+    <p>
+      Fazer download dos arquivos e do protocolo e migrar para o GED. (No GED
+      renomear Indeferimento de Baixa de RT web + data protocolo formato
+      AAAA_MM_DD)
+    </p>
     <p>Abrir cadastro do estabelecimento para verificação da situação:</p>
-    <p>Incluir status 9436 -  COMUNICADO/ CONSTATAÇÃO DE DESLIGAMENTO DA RT:</p>
-    <p>Colocar data de início = data do desligamento / data fim o prazo de 30 dias para programação de notificação ao estabelecimento caso o profissional não regularize a baixa e o estabelecimento fique irregular sem o profissional.</p>
+    <p>Incluir status 9436 - COMUNICADO/ CONSTATAÇÃO DE DESLIGAMENTO DA RT:</p>
+    <p>
+      Colocar data de início = data do desligamento / data fim o prazo de 30
+      dias para programação de notificação ao estabelecimento caso o
+      profissional não regularize a baixa e o estabelecimento fique irregular
+      sem o profissional.
+    </p>
 
-    <h3>CONTROLE DO PRAZO DE 1 DIA ÚTIL PARA ENVIO DE CORREÇÃO DO PROCEDIMENTO:</h3>
-    <h3>CONTROLE DOS STATUS 9436 PARA NOTIFICAÇÃO DOS ESTABELECIMENTOS CASO PROFISSIONAL NÃO EFETIVE A BAIXA:</h3>
-    <p>Selecionar Menu Sagicon: / Status; / Relatório / Manutenção de Status; / Tipo de relatório Firma; / incluir status 9436; / Pesquisar; / Visualizar. / Verificar os estabelecimentos com Data Vencimento próxima para notificar a empresa adequar assistência, caso o profissional ainda não tenha regularizado a baixa da RT.</p>
+    <h3>
+      CONTROLE DO PRAZO DE 1 DIA ÚTIL PARA ENVIO DE CORREÇÃO DO PROCEDIMENTO:
+    </h3>
+    <h3>
+      CONTROLE DOS STATUS 9436 PARA NOTIFICAÇÃO DOS ESTABELECIMENTOS CASO
+      PROFISSIONAL NÃO EFETIVE A BAIXA:
+    </h3>
+    <p>
+      Selecionar Menu Sagicon: / Status; / Relatório / Manutenção de Status; /
+      Tipo de relatório Firma; / incluir status 9436; / Pesquisar; / Visualizar.
+      / Verificar os estabelecimentos com Data Vencimento próxima para notificar
+      a empresa adequar assistência, caso o profissional ainda não tenha
+      regularizado a baixa da RT.
+    </p>
 
-    <img src="ex.relatorio.png" alt="imagem de exemplo para o relatório">
+    <img src="ex.relatorio.png" alt="imagem de exemplo para o relatório" />
 
-    <h3>MODELO NOTIFICAÇÃO DO ESTABELECIMENTO APÓS BAIXA WEB SER INDEFERIDA:</h3>
-    <p>Oficiar (AR) o estabelecimento DROGARIA SJS LTDA, tendo em vista o protocolo nº 28564, de baixa da responsabilidade técnica via web do(a) profissional DESIREE NASCIMENTO, na condição de diretora técnica desse estabelecimento, informamos que embora a baixa não tenha sido efetivada por questões documentais, considerando a informação de que não trabalha mais nesse estabelecimento desde 12.01.2020, ficando sem assistência de farmacêutico habilitado para o horário de segunda a sábado das 09 às 12h e 13 as 16h, fica o estabelecimento notificado a regularizar a assistência farmacêutica para todo horário de funcionamento, na forma do art. 24 da Lei 3.820/60 combinado com art. 15 da Lei Federal 5.991/73 e Lei 13.021/2014, sob a pena autuações e multas na constatação da ausência do(a) referido(a) farmacêutico(a), a partir da ciência do ofício, conforme previsto a Resolução 648/2017 do Conselho Federal de Farmácia.</p>
+    <h3>
+      MODELO NOTIFICAÇÃO DO ESTABELECIMENTO APÓS BAIXA WEB SER INDEFERIDA:
+    </h3>
+    <p>
+      Oficiar (AR) o estabelecimento DROGARIA SJS LTDA, tendo em vista o
+      protocolo nº 28564, de baixa da responsabilidade técnica via web do(a)
+      profissional DESIREE NASCIMENTO, na condição de diretora técnica desse
+      estabelecimento, informamos que embora a baixa não tenha sido efetivada
+      por questões documentais, considerando a informação de que não trabalha
+      mais nesse estabelecimento desde 12.01.2020, ficando sem assistência de
+      farmacêutico habilitado para o horário de segunda a sábado das 09 às 12h e
+      13 as 16h, fica o estabelecimento notificado a regularizar a assistência
+      farmacêutica para todo horário de funcionamento, na forma do art. 24 da
+      Lei 3.820/60 combinado com art. 15 da Lei Federal 5.991/73 e Lei
+      13.021/2014, sob a pena autuações e multas na constatação da ausência
+      do(a) referido(a) farmacêutico(a), a partir da ciência do ofício, conforme
+      previsto a Resolução 648/2017 do Conselho Federal de Farmácia.
+    </p>
 
     <h3>Caso procedimento (arquivo) esteja errado:</h3>
-    <p>No protocolo, clicar em alterar para incluir a inscrição da empresa, se for possível a identificação.</p>
-    <p>Clicar em Evolução. </p>
-    <p>Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 3 (Indeferido).</p>
+    <p>
+      No protocolo, clicar em alterar para incluir a inscrição da empresa, se
+      for possível a identificação.
+    </p>
+    <p>Clicar em Evolução.</p>
+    <p>
+      Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 3
+      (Indeferido).
+    </p>
 
     <p>Parecer:</p>
 
-    <textarea type="text" class="texto" name="texto" id="texto8" cols="60" rows="10" readonly>PROTOCOLO ARQUIVADO. COMUNICADO INDEFERIDO. NÃO FOI ANEXADO FORMULÁRIO DE COMUNICAÇÃO DO DESLIGAMENTO.
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto8"
+      cols="60"
+      rows="10"
+      readonly
+    >
+PROTOCOLO ARQUIVADO. COMUNICADO INDEFERIDO. NÃO FOI ANEXADO FORMULÁRIO DE COMUNICAÇÃO DO DESLIGAMENTO.
 
 A PROFISSIONAL DEVE REALIZAR A BAIXA PELO PORTAL DO CRF-PR EM CASA SEGUINDO AS ORIENTAÇÕES DO LINK https://www.crf-pr.org.br/noticia/visualizar/8459
 OU
-CASO AINDA NÃO ESTEJA DE POSSE DE TODOS OS DOCUMENTOS, DEVERÁ FAZER NOVO COMUNICADO DE DESLIGAMENTO, SEGUINDO AS ORIENTAÇÕES E ANEXANDO FORMULÁRIO DISPONÍVEL NO LINK: https://www.crf-pr.org.br/servico/visualizar/id/26</textarea>
-    <button class="botao botao8" id="copyBlock8" onclick="copyBlock8">Clique para copiar</button> <span class="span" id="copyAnswer8"></span>
+CASO AINDA NÃO ESTEJA DE POSSE DE TODOS OS DOCUMENTOS, DEVERÁ FAZER NOVO COMUNICADO DE DESLIGAMENTO, SEGUINDO AS ORIENTAÇÕES E ANEXANDO FORMULÁRIO DISPONÍVEL NO LINK: https://www.crf-pr.org.br/servico/visualizar/id/26</textarea
+    >
+    <button class="botao botao8" id="copyBlock8" onclick="copyBlock8">
+      Clique para copiar
+    </button>
+    <span class="span" id="copyAnswer8"></span>
 
-
-    <p>Salvar protocolo. Fazer download do arquivo e do protocolo e migrar para o GED. (No GED renomear Indeferimento comunicado de desligamento web + data protocolo formato AAAA_MM_DD)</p>
-    <p>Abrir o cadastro da empresa e incluir status 9436 -  COMUNICADO/ CONSTATAÇÃO DE DESLIGAMENTO DA RT:</p>
-    <p>Colocar data de início = data do desligamento / data fim o prazo de 30 dias para programação de notificação ao estabelecimento caso o profissional não regularize a baixa e o estabelecimento fique irregular sem o profissional.</p>
-    <p>Envio de documentos não relacionados a baixa de RT: Clicar em Evolução. Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 3 (Indeferido).</p>
+    <p>
+      Salvar protocolo. Fazer download do arquivo e do protocolo e migrar para o
+      GED. (No GED renomear Indeferimento comunicado de desligamento web + data
+      protocolo formato AAAA_MM_DD)
+    </p>
+    <p>
+      Abrir o cadastro da empresa e incluir status 9436 - COMUNICADO/
+      CONSTATAÇÃO DE DESLIGAMENTO DA RT:
+    </p>
+    <p>
+      Colocar data de início = data do desligamento / data fim o prazo de 30
+      dias para programação de notificação ao estabelecimento caso o
+      profissional não regularize a baixa e o estabelecimento fique irregular
+      sem o profissional.
+    </p>
+    <p>
+      Envio de documentos não relacionados a baixa de RT: Clicar em Evolução.
+      Local: 8 (Cadastro) / Situação: 4 (Arquivado) / Julgamento: 3
+      (Indeferido).
+    </p>
 
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto9" cols="60" rows="5" readonly>ATENÇÃO!
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto9"
+      cols="60"
+      rows="5"
+      readonly
+    >
+ATENÇÃO!
 O canal utilizado destina-se EXCLUSIVAMENTE para encaminhamento de documentos para correção ou complementação de procedimento de BAIXA DE RESPONSABILIDADE TÉCNICA.
-Utilizar o canal próprio para o caso, seja comunicado ou justificativa de ausência.</textarea>
-    <button class="botao botao9" id="copyBlock9" onclick="copyBlock9" >Clique para copiar</button> <span class="span" id="copyAnswer9"></span>
+Utilizar o canal próprio para o caso, seja comunicado ou justificativa de ausência.</textarea
+    >
+    <button class="botao botao9" id="copyBlock9" onclick="copyBlock9">
+      Clique para copiar
+    </button>
+    <span class="span" id="copyAnswer9"></span>
 
     <p>Parecer:</p>
-    <textarea type="text" class="texto" name="texto" id="texto10" cols="60" rows="5" readonly>ATENÇÃO!
+    <textarea
+      type="text"
+      class="texto"
+      name="texto"
+      id="texto10"
+      cols="60"
+      rows="5"
+      readonly
+    >
+ATENÇÃO!
 O canal utilizado destina-se EXCLUSIVAMENTE para encaminhamento de COMUNICADO DE DESLIGAMENTO (SAÍDA) DO CONTRATO antes da efetivação da BAIXA DA RESPONSABILIDADE TÉCNICA, para cumprimento do prazo disposto no Código de Ética.
-Utilizar o canal próprio para comunicado de ausência.</textarea>
-    <button class="botao botao10" id="copyBlock10" onclick="copyBlock10" >Clique para copiar</button> <span class="span" id="copyAnswer10"></span>
+Utilizar o canal próprio para comunicado de ausência.</textarea
+    >
+    <button class="botao botao10" id="copyBlock10" onclick="copyBlock10">
+      Clique para copiar
+    </button>
+    <span class="span" id="copyAnswer10"></span>
 
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
-   
- <!--<script type="text/javascript" src="main.js"></script>-->
+    <script type="text/javascript" src="main.js">
+      var textarea    = document.getElementById("texto");
+      var answer      = document.getElementById("copyAnswer");
+      var copy        = document.getElementById("copyBlock");
 
-     <script type="text/javascript">
-        var textarea    = document.getElementById("texto");
-        var answer      = document.getElementById("copyAnswer");
-        var copy        = document.getElementById("copyBlock");
+      var textarea1    = document.getElementById("texto1");
+      var answer1      = document.getElementById("copyAnswer1");
+      var copy1        = document.getElementById("copyBlock1");
 
-        var textarea1    = document.getElementById("texto1");
-        var answer1      = document.getElementById("copyAnswer1");
-        var copy1        = document.getElementById("copyBlock1");
+      var textarea2    = document.getElementById("texto2");
+      var answer2      = document.getElementById("copyAnswer2");
+      var copy2        = document.getElementById("copyBlock2");
 
-        var textarea2    = document.getElementById("texto2");
-        var answer2      = document.getElementById("copyAnswer2");
-        var copy2        = document.getElementById("copyBlock2");
+      var textarea3    = document.getElementById("texto3");
+      var answer3      = document.getElementById("copyAnswer3");
+      var copy3        = document.getElementById("copyBlock3");
 
-        var textarea3    = document.getElementById("texto3");
-        var answer3      = document.getElementById("copyAnswer3");
-        var copy3        = document.getElementById("copyBlock3");
+      var textarea4    = document.getElementById("texto4");
+      var answer4      = document.getElementById("copyAnswer4");
+      var copy4        = document.getElementById("copyBlock4");
 
-        var textarea4    = document.getElementById("texto4");
-        var answer4      = document.getElementById("copyAnswer4");
-        var copy4        = document.getElementById("copyBlock4");
+      var textarea5    = document.getElementById("texto5");
+      var answer5      = document.getElementById("copyAnswer5");
+      var copy5        = document.getElementById("copyBlock5");
 
-        var textarea5    = document.getElementById("texto5");
-        var answer5      = document.getElementById("copyAnswer5");
-        var copy5        = document.getElementById("copyBlock5");
+      var textarea6    = document.getElementById("texto6");
+      var answer6      = document.getElementById("copyAnswer6");
+      var copy6        = document.getElementById("copyBlock6");
 
-        var textarea6    = document.getElementById("texto6");
-        var answer6      = document.getElementById("copyAnswer6");
-        var copy6        = document.getElementById("copyBlock6");
+      var textarea7    = document.getElementById("texto7");
+      var answer7      = document.getElementById("copyAnswer7");
+      var copy7        = document.getElementById("copyBlock7");
 
-        var textarea7    = document.getElementById("texto7");
-        var answer7      = document.getElementById("copyAnswer7");
-        var copy7        = document.getElementById("copyBlock7");
+      var textarea8    = document.getElementById("texto8");
+      var answer8      = document.getElementById("copyAnswer8");
+      var copy8        = document.getElementById("copyBlock8");
 
-        var textarea8    = document.getElementById("texto8");
-        var answer8      = document.getElementById("copyAnswer8");
-        var copy8        = document.getElementById("copyBlock8");
+      var textarea9    = document.getElementById("texto9");
+      var answer9      = document.getElementById("copyAnswer9");
+      var copy9        = document.getElementById("copyBlock9");
 
-        var textarea9    = document.getElementById("texto9");
-        var answer9      = document.getElementById("copyAnswer9");
-        var copy9        = document.getElementById("copyBlock9");
+      var textarea10    = document.getElementById("texto10");
+      var answer10      = document.getElementById("copyAnswer10");
+      var copy10        = document.getElementById("copyBlock10");*/
 
-        var textarea10    = document.getElementById("texto10");
-        var answer10      = document.getElementById("copyAnswer10");
-        var copy10        = document.getElementById("copyBlock10");*/
-
-        copy.addEventListener('click', function(e) {
-            textarea.select();
-                try {
-                    var successful = document.execCommand('copy');
-                    if(successful) answer.innerHTML = 'Copiado!';
-                    else answer.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy1.addEventListener('click', function(e) {
-            textarea1.select();
-                try {
-                    var successful1 = document.execCommand('copy');
-                    if(successful1) answer1.innerHTML = 'Copiado!';
-                    else answer1.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer1.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy2.addEventListener('click', function(e) {
-            textarea2.select();
-                try {
-                    var successful2 = document.execCommand('copy');
-                    if(successful2) answer2.innerHTML = 'Copiado!';
-                    else answer2.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer2.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy3.addEventListener('click', function(e) {
-            textarea3.select();
-                try {
-                    var successful3 = document.execCommand('copy');
-                    if(successful3) answer3.innerHTML = 'Copiado!';
-                    else answer3.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer3.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy4.addEventListener('click', function(e) {
-            textarea4.select();
-                try {
-                    var successful4 = document.execCommand('copy');
-                    if(successful4) answer4.innerHTML = 'Copiado!';
-                    else answer4.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer4.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy5.addEventListener('click', function(e) {
-            textarea5.select();
-                try {
-                    var successful5 = document.execCommand('copy');
-                    if(successful5) answer5.innerHTML = 'Copiado!';
-                    else answer5.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer5.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy6.addEventListener('click', function(e) {
-            textarea6.select();
-                try {
-                    var successful6 = document.execCommand('copy');
-                    if(successful6) answer6.innerHTML = 'Copiado!';
-                    else answer6.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer6.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy7.addEventListener('click', function(e) {
-            textarea7.select();
-                try {
-                    var successful7 = document.execCommand('copy');
-                    if(successful7) answer7.innerHTML = 'Copiado!';
-                    else answer7.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer7.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy8.addEventListener('click', function(e) {
-            textarea8.select();
-                try {
-                    var successful8 = document.execCommand('copy');
-                    if(successful8) answer8.innerHTML = 'Copiado!';
-                    else answer8.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer8.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy9.addEventListener('click', function(e) {
-            textarea9.select();
-                try {
-                    var successful9 = document.execCommand('copy');
-                    if(successful9) answer9.innerHTML = 'Copiado!';
-                    else answer9.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer9.innerHTML = 'Navegador sem suporte!';
-                }
-        });
-        copy10.addEventListener('click', function(e) {
-            textarea10.select();
-                try {
-                    var successful10 = document.execCommand('copy');
-                    if(successful10) answer10.innerHTML = 'Copiado!';
-                    else answer10.innerHTML = 'Não foi possível copiar!';
-                } catch (err) {
-                    answer10.innerHTML = 'Navegador sem suporte!';
-                }
-        });   
+      copy.addEventListener('click', function(e) {
+          textarea.select();
+              try {
+                  var successful = document.execCommand('copy');
+                  if(successful) answer.innerHTML = 'Copiado!';
+                  else answer.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy1.addEventListener('click', function(e) {
+          textarea1.select();
+              try {
+                  var successful1 = document.execCommand('copy');
+                  if(successful1) answer1.innerHTML = 'Copiado!';
+                  else answer1.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer1.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy2.addEventListener('click', function(e) {
+          textarea2.select();
+              try {
+                  var successful2 = document.execCommand('copy');
+                  if(successful2) answer2.innerHTML = 'Copiado!';
+                  else answer2.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer2.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy3.addEventListener('click', function(e) {
+          textarea3.select();
+              try {
+                  var successful3 = document.execCommand('copy');
+                  if(successful3) answer3.innerHTML = 'Copiado!';
+                  else answer3.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer3.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy4.addEventListener('click', function(e) {
+          textarea4.select();
+              try {
+                  var successful4 = document.execCommand('copy');
+                  if(successful4) answer4.innerHTML = 'Copiado!';
+                  else answer4.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer4.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy5.addEventListener('click', function(e) {
+          textarea5.select();
+              try {
+                  var successful5 = document.execCommand('copy');
+                  if(successful5) answer5.innerHTML = 'Copiado!';
+                  else answer5.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer5.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy6.addEventListener('click', function(e) {
+          textarea6.select();
+              try {
+                  var successful6 = document.execCommand('copy');
+                  if(successful6) answer6.innerHTML = 'Copiado!';
+                  else answer6.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer6.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy7.addEventListener('click', function(e) {
+          textarea7.select();
+              try {
+                  var successful7 = document.execCommand('copy');
+                  if(successful7) answer7.innerHTML = 'Copiado!';
+                  else answer7.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer7.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy8.addEventListener('click', function(e) {
+          textarea8.select();
+              try {
+                  var successful8 = document.execCommand('copy');
+                  if(successful8) answer8.innerHTML = 'Copiado!';
+                  else answer8.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer8.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy9.addEventListener('click', function(e) {
+          textarea9.select();
+              try {
+                  var successful9 = document.execCommand('copy');
+                  if(successful9) answer9.innerHTML = 'Copiado!';
+                  else answer9.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer9.innerHTML = 'Navegador sem suporte!';
+              }
+      });
+      copy10.addEventListener('click', function(e) {
+          textarea10.select();
+              try {
+                  var successful10 = document.execCommand('copy');
+                  if(successful10) answer10.innerHTML = 'Copiado!';
+                  else answer10.innerHTML = 'Não foi possível copiar!';
+              } catch (err) {
+                  answer10.innerHTML = 'Navegador sem suporte!';
+              }
+      });
     </script>
-
-    
-</body>
-
+  </body>
 </html>
