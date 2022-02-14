@@ -1,7 +1,7 @@
     const textInput = document.getElementById('texto');
     const copyButton = document.getElementById('botao');
 
-    copyButton.addEventListener('click', ()=> {
+    copyButton.addEventListener('click', function()=> {
       textInput.select();
       document.execCommand('botao');
     });
