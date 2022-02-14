@@ -3,7 +3,7 @@
 
     copyButton.addEventListener('click', ()=> {
       textInput.select();
-      document.execCommand('copy');
+      document.execCommand('botao');
     });
 
 
