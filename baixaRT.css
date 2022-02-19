@@ -14,6 +14,10 @@ body{
     text-align: center;
 }
 
+h2{
+    width: 200%;
+}
+
 textarea{
     background-color: rgb(164, 164, 201);
     padding: 10px;
@@ -38,18 +42,21 @@ p{
 }
 
 button{
-    background-color: rgba(24, 64, 122, 0.801);
+    background-color: rgba(13, 45, 94, 0.836);
     color: #fff;
     width: 100%;
-    height: 11vh;
+    height: 10vh;
     padding: 5px;
     text-align: center;
-    letter-spacing: 3px;
-    font-size: 16px;
+    letter-spacing: .2em;
+    font-size: 18px;
     border-radius: 15px;
-    font-weight: bold;
+    font-weight: 400;
+    border: none;
 }
 button:hover{
-    background-color: rgb(48, 38, 182);
-    border: 3px solid rgb(213, 245, 68);
+    background-color: rgba(18, 109, 151, 0.904);
+    border: 5px double rgb(0, 0, 0);
+    color: #000;
+    font-weight: 700;
 }
