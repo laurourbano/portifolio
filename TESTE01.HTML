@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Copy to Clipboard</title>
+ 
+    <style>
+        * {
+            margin: 0px; 
+            padding: 0px; 
+            box-sizing: border-box;
+        }
+ 
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(191, 202, 211);
+            background: linear-gradient(90deg, rgb(147, 179, 207) 0%, rgb(211, 234, 243) 100%);
+        }
+ 
+        input, button {
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            padding: 20px;
+        }
+ 
+        input {
+            outline: none;
+            background-color:transparent;
+            color: #06224a;
+            width: 500px;
+        }
+ 
+        input:focus, input:focus, select:focus {
+            outline: 0;
+        }
+ 
+        button {
+            margin-left: 10px;
+            background-color: #06224a;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+ 
+        button:hover {
+            background-color: #010d1f;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+ 
+    <input type="text" name="texto" id="texto" value="Esse é o texto" readonly/>
+    <button onclick="copiarTexto()">Copiar</button>
+</body>
+<script type='text/javascript'>
+    function copiarTexto() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert(textoCopiado.value);
+    }
+</script>
+</html>

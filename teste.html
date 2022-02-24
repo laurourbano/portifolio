@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+  <input id="text" />
+
+  <button id="copy">Copy</button>
+
+  <script type="text/javascript">
+    const textInput = document.getElementById('text');
+    const copyButton = document.getElementById('copy');
+
+    copyButton.addEventListener('click', ()=> {
+      textInput.select();
+      document.execCommand('copy');
+    });
+  </script>
+
+</body>
+</html>
