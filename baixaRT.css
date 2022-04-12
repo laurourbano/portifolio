@@ -55,6 +55,7 @@ button{
     border-radius: 15px;
     font-weight: 400;
     border: none;
+    margin: 5px;
 }
 button:hover{
     background-color: rgba(18, 109, 151, 0.904);
