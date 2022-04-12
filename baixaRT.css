@@ -58,8 +58,8 @@ button{
     margin: 5px;
 }
 button:hover{
-    background-color: rgba(18, 109, 151, 0.904);
-    border: 5px double rgb(0, 0, 0);
+    background-color: rgba(18, 109, 151, 0.800);
+    border: 2px solid rgb(0, 0, 0);
     color: #000;
-    font-weight: 700;
+    font-weight: 400;
 }
