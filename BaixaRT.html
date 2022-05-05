@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="baixaRT.css">
   </head>
   <body>
+    var baixaCadastro = "46";
     <h2>Pareceres mais utilizados</h2>
     <hr>
     <div>
-      <p>Local:  `${baixaCadastro}` / Situação: 19 / Julgamento: 21 
+      <p>Local:  <span id = "baixaCadastro"></span> / Situação: 19 / Julgamento: 21 
   </p>
       <textarea class="areaPequena"  id="texto" type="text" readonly>EMITIDO OFÍCIO Nº nº ****</textarea><br>
       <button id="execCopy" ref="#texto">OFÍCIO</button><br>
@@ -91,19 +92,19 @@ MOTIVO DO INDEFERIMENTO:
     </div>
 
     <script>
-      --var baixaCadastro = "46";
+      document.getElementById(".baixaCadastro").innerHTML = "46";
       
-    document.getElementById('execCopy').addEventListener('click', execCopy);
-    function execCopy() {
-      document.querySelector("#texto").select();
-      document.execCommand("copy");
-    }
-
-    document.getElementById('execCopy1').addEventListener('click', execCopy1);
-      function execCopy1() {
-        document.querySelector("#texto1").select();
+      document.getElementById('execCopy').addEventListener('click', execCopy);
+      function execCopy() {
+        document.querySelector("#texto").select();
         document.execCommand("copy");
       }
+
+      document.getElementById('execCopy1').addEventListener('click', execCopy1);
+        function execCopy1() {
+          document.querySelector("#texto1").select();
+          document.execCommand("copy");
+        }
 
       document.getElementById('execCopy2').addEventListener('click', execCopy2);
       function execCopy2() {
