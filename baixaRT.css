@@ -93,7 +93,7 @@ p{
 }
 
 #mode-selector:hover {
-	background-color: #000401;
+	background-color: #333;
 }
 
 #mode-selector.dark-mode {
@@ -102,7 +102,7 @@ p{
 }
 
 #mode-selector.dark-mode:hover {
-	background-color: #4e545c;
+	background-color: #565b61;
 	color: #e5e8e8;
 }
 
