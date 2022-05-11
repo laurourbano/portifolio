@@ -23,8 +23,8 @@ main div{
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	height: 85vh;
 	width: 80%;
 	display: flex;
