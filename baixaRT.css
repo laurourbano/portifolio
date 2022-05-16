@@ -26,6 +26,10 @@ main section div{
     grid-template-columns: 1fr 1fr;
 }
 
+main section div:nth-child(1n) {
+  color: lime;
+}
+
 section {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
