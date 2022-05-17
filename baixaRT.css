@@ -1,111 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
-*{
+* {
 	margin: 0;
-    	padding: 0;
-    	box-sizing: border-box;
-    	font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
 body {
-	background-color: rgb(167, 167, 167);
-	color: hsl(0, 3%, 15%);
+	background-color: rgb(68, 66, 66);
+	color: #bfc5c5;
 	margin: 0;
 	font-family: 'Quicksand';
-    	transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+body.light-mode {
+	background-color: rgb(167, 167, 167);
+	color: hsl(0, 3%, 15%);
+	transition: all 0.5s linear;
 }
 
 main div {
-    	text-align: center;
+	text-align: center;
 }
 
-main section div{
-   	display: grid;
-	margin: 10px;
-	grid-template-columns: 1fr 1fr;
+main section div {
+	display: grid;
+	margin: 5px;
+	padding: 10px;
+	grid-template-columns: 1fr;
 }
-
 main section div:nth-child(1) {
-	background-color: rgba(210,180,140, 0.2);
+	background-color: rgba(255, 230, 2, 0.3);
 }
+
 main section div:nth-child(2) {
-	background-color: rgba(135,206,250, 0.2);
+	background-color: rgba(35, 79, 160, 0.3);
 }
+
 main section div:nth-child(3) {
-	background-color: rgba(135,206,250, 0.2);
+	background-color: rgba(35, 79, 160, 0.3);
 }
+
 main section div:nth-child(4) {
-	background-color: rgba(152,251,152, 0.2);
+	background-color: rgba(255, 165, 0, 0.2);
 }
+
 main section div:nth-child(5) {
-	background-color: rgba(135,206,250, 0.2);
+	background-color: rgba(35, 79, 160, 0.3);
 }
+
 main section div:nth-child(6) {
-	background-color: rgba(205,92,92, 0.2);
+	background-color: rgba(35, 79, 160, 0.3);
 }
+
 main section div:nth-child(7) {
-	background-color: rgba(240,230,140, 0.2);
+	background-color: rgba(205, 92, 92, 0.2);
 }
+
 main section div:nth-child(8) {
-	background-color: rgba(255,165,0, 0.2);
+	background-color: rgba(35, 79, 160, 0.3);
 }
 
 section {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	height: 80vh;
 	width: 100%;
 }
 
 h3, h5 {
-    	padding: 10px;
-    	font-size: 16px;
-    	text-align: center;
-}
-body.dark-mode {
-	background-color: rgb(68, 66, 66);
-	color: #bfc5c5;
-	transition: all 0.5s linear;
+	padding: 0px;
+	font-size: 20px;
+	text-align: center;
 }
 
-textarea{
-	background-color:  rgb(62, 62, 85);
-    	font-weight: 500;
-    	font-size: 12px;
-    	border-radius: 8px;
-    	width: 100%;
-    	height: 10vh;
+textarea {
+	background-color: rgb(62, 62, 85);
+	font-weight: 600;
+	font-size: 10px;
+	padding: 5px;
+	border-radius: 8px;
+	width: 100%;
+	height: 10vh;
 	color: #bfc5c5;
 }
 
-p{
-    	font-weight: 400;
-    	font-size: 12px;
-    	padding: 0 20px;
+p {
+	font-weight: 400;
+	font-size: 12px;
+	padding: 0px;
+	font-weight: 600;
 }
 
-.botao{
-    	background-color: #164d6d;
+.botao {
+	background-color: #164d6d;
 	color: #bfc5c5;
 	width: 100%;
 	height: 8vh;
 	text-align: center;
-    	font-size: 14px;
-    	border-radius: 15px;
-    	font-weight: 500;
-    	border: none;
+	font-size: 16px;
+	border-radius: 15px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
 }
 
-.botao:hover{
-    	background-color: rgba(87, 152, 182, 0.8);
-    	border: 2px solid rgb(27, 26, 26);
-    	color: #111;
-    	font-weight: 400;
+.botao:hover {
+	background-color: rgba(87, 152, 182, 0.8);
+	border: 2px solid rgb(27, 26, 26);
+	color: #111;
+	font-weight: 600;
+	cursor: pointer;
 }
 
+.botao.light-mode {
+	background-color: #bfc5c5;
+	color: #164d6d;
+	cursor: pointer;
+}
+
+.botao.light-mode:hover{
+	background-color: rgb(27, 26, 26);
+	border: 2px solid rgba(87, 152, 182, 0.8);
+	cursor: pointer;
+}
 #mode-selector {
 	border-radius: 10px;
-    	margin: 0 auto;
+	margin: 0 auto;
 	font-size: 1.1rem;
 	height: 5vh;
 	width: 200px;
@@ -113,36 +136,40 @@ p{
 	background-color: #4e545c;
 	color: #e5e8e8;
 	transition: all 0.5s linear;
+	cursor: pointer;
 }
 
 #mode-selector:hover {
 	background-color: #333;
+	cursor: pointer;
 }
 
-#mode-selector.dark-mode {
+#mode-selector.light-mode {
 	background-color: #e5e8e8;
 	color: #4e545c;
+	cursor: pointer;
 }
 
-#mode-selector.dark-mode:hover {
+#mode-selector.light-mode:hover {
 	background-color: #565b61;
 	color: #e5e8e8;
+	cursor: pointer;
 }
 
 footer {
+	background-color: #8d9797;
+	color: #000401;
 	width: 100%;
-	background-color: #4e545c;
 	padding: 16px;
-	color: #e5e8e8;
 	position: fixed;
 	bottom: 0;
 	text-align: center;
-	font-weight: 400;
-    	transition: all 0.5s linear;
+	font-weight: 600;
+	transition: all 0.5s linear;
 }
 
-footer.dark-mode {
-	background-color: #8d9797;
-	color: #000401;
-    	transition: all 0.5s linear;
+footer.light-mode {
+	background-color: #4e545c;
+	color: #e5e8e8;
+	transition: all 0.5s linear;
 }
