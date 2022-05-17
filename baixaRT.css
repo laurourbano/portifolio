@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
+:root{
+	--corDeFundoDiv: rgba(0, 0, 255, .2)
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -32,35 +36,35 @@ main section div {
 	grid-template-columns: 1fr;
 }
 main section div:nth-child(1) {
-	background-color: rgba(255, 230, 2, 0.3);
+	background-color: rgba(188, 188, 0, 0.5);
 }
 
 main section div:nth-child(2) {
-	background-color: rgba(35, 79, 160, 0.3);
+	background-color: var(--corDeFundoDiv);
 }
 
 main section div:nth-child(3) {
-	background-color: rgba(35, 79, 160, 0.3);
+	background-color: var(--corDeFundoDiv);
 }
 
 main section div:nth-child(4) {
-	background-color: rgba(255, 165, 0, 0.2);
+	background-color: rgba(255, 140, 0, 0.6);
 }
 
 main section div:nth-child(5) {
-	background-color: rgba(35, 79, 160, 0.3);
+	background-color: var(--corDeFundoDiv);
 }
 
 main section div:nth-child(6) {
-	background-color: rgba(35, 79, 160, 0.3);
+	background-color: var(--corDeFundoDiv);
 }
 
 main section div:nth-child(7) {
-	background-color: rgba(205, 92, 92, 0.2);
+	background-color: rgba(255, 10, 10, 0.4);
 }
 
 main section div:nth-child(8) {
-	background-color: rgba(35, 79, 160, 0.3);
+	background-color: var(--corDeFundoDiv);
 }
 
 section {
@@ -89,9 +93,9 @@ textarea {
 
 p {
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 0px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .botao {
