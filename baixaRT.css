@@ -179,8 +179,14 @@ footer.light-mode {
 }
 
 @media only screen and (max-width: 360px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
   section {
     display: grid;
     grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
   }
 }
