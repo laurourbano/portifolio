@@ -179,9 +179,8 @@ footer.light-mode {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  section {
     display: grid;
-grid-template-columns: 1fr;
-
+    grid-template-columns: 1fr;
   }
 }
