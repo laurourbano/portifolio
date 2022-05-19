@@ -8,6 +8,7 @@ function changeClasses() {
 	h1.classList.toggle(lightModeClass);
 	body.classList.toggle(lightModeClass);
 	footer.classList.toggle(lightModeClass);
+	nav.classList.toggle(lightModeClass);
 }
 
 function changeText() {
@@ -29,5 +30,6 @@ const button = document.getElementById('mode-selector');
 const h1 = document.getElementById('page-title');
 const body = document.getElementsByTagName('body')[0];
 const footer = document.getElementsByTagName('footer')[0];
+const nav = document.getElementsByTagName('nav')[0];
 
 button.addEventListener('click', changeMode);

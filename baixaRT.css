@@ -67,6 +67,17 @@ main section div:nth-child(8) {
 	background-color: var(--corDeFundoDiv);
 }
 
+nav {
+	background-color: #8d9797;
+	color: #000401;
+}
+
+nav.light-mode {
+	background-color: #4e545c;
+	color: #e5e8e8;
+	transition: all 0.5s linear;
+}
+
 section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
