@@ -35,7 +35,7 @@ main section div {
 	padding: 5px;
 	grid-template-columns: 1fr;
 }
-main section div:nth-child(6) {
+main section div:nth-child(7) {
 	background-color: rgba(188, 188, 0, 0.5);
 }
 
@@ -47,7 +47,7 @@ main section div:nth-child(2) {
 	background-color: var(--corDeFundoDiv);
 }
 
-main section div:nth-child(7) {
+main section div:nth-child(8) {
 	background-color: rgba(255, 140, 0, 0.6);
 }
 
@@ -59,11 +59,15 @@ main section div:nth-child(4) {
 	background-color: var(--corDeFundoDiv);
 }
 
-main section div:nth-child(8) {
+main section div:nth-child(9) {
 	background-color: rgba(255, 10, 10, 0.4);
 }
 
 main section div:nth-child(5) {
+	background-color: var(--corDeFundoDiv);
+}
+
+main section div:nth-child(6) {
 	background-color: var(--corDeFundoDiv);
 }
 
@@ -80,7 +84,7 @@ nav.light-mode {
 
 section {
 	display: grid;
-	grid-template-columns: 1.5fr 2fr 2fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	height: 80vh;
 	width: 100%;
 }
