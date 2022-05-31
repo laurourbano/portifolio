@@ -78,3 +78,21 @@ a img {
 footer{
   text-align: center;
 }
+
+@media (max-width:600px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+  }
+  .social-media {
+    display: block;
+  }
+}
