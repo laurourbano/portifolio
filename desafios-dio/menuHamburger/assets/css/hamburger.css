@@ -3,12 +3,12 @@
   margin: 0;box-sizing: border-box;
 }
 .wrapper {
-  background-color: rgb(221, 161, 171);
+  background-color: rgb(111, 111, 111);
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: top;
 }
 .checkbox {
   height: 100px;
