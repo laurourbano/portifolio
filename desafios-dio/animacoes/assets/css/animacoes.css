@@ -40,7 +40,6 @@ a{
   align-items: center;
   position: relative;
   border-radius: 10px;
-  padding: 5rem;
 }
 
 .card-wrapper::before {
