@@ -222,6 +222,7 @@ a:hover {
     width: 400px;
     margin: 3rem 0 0 0;
     background-image: url('assets/img/room.jpg');
+    background-color: #1f1f27;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
