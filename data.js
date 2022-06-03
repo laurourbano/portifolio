@@ -7,7 +7,7 @@ const dataAtual = ano+"_"+mes+"_"+dia;
 data.innerHTML += dataAtual;
 
 const dataFormatada = document.querySelector(".dataFormatada");
-const dataNova = ("0"+dia)+"/"+("0"+mes)+"/"+ano;
+const dataNova = (dia)+"/"+(+mes)+"/"+ano;
 dataFormatada.innerHTML += dataNova;
 
 const dataIndeferimento = document.querySelector(".dataIndeferimento");
