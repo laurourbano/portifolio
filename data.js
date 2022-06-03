@@ -6,6 +6,10 @@ const ano = new Date().getFullYear();
 const dataAtual = ano+"_"+mes+"_"+dia;
 data.innerHTML += dataAtual;
 
+const dataFormatada = document.querySelector(".dataFormatada");
+const dataNova = ("0"+dia)+"/"+("0"+mes)+"/"+ano;
+dataFormatada.innerHTML += dataNova;
+
 const dataIndeferimento = document.querySelector(".dataIndeferimento");
 const dia1 = new Date().getDate();
 const mes1 = new Date().getMonth() + 1;

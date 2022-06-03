@@ -13,7 +13,6 @@ body {
 	background-color: rgb(68, 66, 66);
 	color: #bfc5c5;
 	margin: 0;
-	font-family: 'Quicksand';
 	transition: all 0.5s linear;
 }
 body.light-mode {
@@ -72,7 +71,6 @@ h3, h5 {
 }
 textarea {
 	background-color: rgb(62, 62, 85);
-	font-weight: 600;
 	font-size: 10px;
 	padding: 5px;
 	border-radius: 8px;
@@ -81,10 +79,16 @@ textarea {
 	color: #bfc5c5;
 }
 p {
-	font-weight: 400;
 	font-size: 14px;
 	padding: 0px;
-	font-weight: 700;
+}
+.dataFormatada {
+	display: flex;
+	position: absolute;
+	color: #000;
+	top: 10px;
+	left: 10px;
+	font-size: 1.2em;
 }
 .botao {
 	background-color: #164d6d;
@@ -94,7 +98,6 @@ p {
 	text-align: center;
 	font-size: 16px;
 	border-radius: 15px;
-	font-weight: 600;
 	border: none;
 	cursor: pointer;
 }
@@ -102,7 +105,6 @@ p {
 	background-color: rgba(87, 152, 182, 0.8);
 	border: 2px solid rgb(27, 26, 26);
 	color: #111;
-	font-weight: 600;
 	cursor: pointer;
 }
 .botao.light-mode {
@@ -149,7 +151,6 @@ footer {
 	position: fixed;
 	bottom: 0;
 	text-align: center;
-	font-weight: 600;
 	transition: all 0.5s linear;
 }
 footer.light-mode {
