@@ -1,8 +1,6 @@
-let data = Array.prototype.slice.call(document.getElementsByClassName('.data'));
-let prazo = Array.prototype.slice.call(document.getElementsByClassName('.prazo'));
-
-let prazoFinal = data + prazo;
-
-console.log(prazoFinal);
-console.log(data);
-console.log(prazo);
+const data = document.getElementsByClassName(".prazo");
+const dia = new Date().getDate();
+const mes = new Date().getMonth() + 1;
+const ano = new Date().getFullYear();
+var lauro = "lauro";
+data.innerHTML = lauro;
