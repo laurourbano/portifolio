@@ -1,4 +1,8 @@
-let data = document.querySelectorAll(".prazo");
-let novaData = data +30;
+let data = Array.prototype.slice.call(document.getElementsByClassName('.data'));
+let prazo = Array.prototype.slice.call(document.getElementsByClassName('.prazo'));
 
-data.textContent = novaData;
+let prazoFinal = data + prazo;
+
+console.log(prazoFinal);
+console.log(data);
+console.log(prazo);
