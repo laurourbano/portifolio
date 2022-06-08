@@ -1,17 +1,19 @@
 body {
     background-color: #343435;
     color: #b6b6b2;
-    font-size: 26px;
+    font-size: 20px;
     font-family: "sans-serif";
 }
 div{
     justify-content: center;
     align-items: center;
+    display: block;
+    padding: 10px;
 }
 input{
-    font-size: 26px;
+    font-size: 20px;
     font-family: "sans-serif";
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background-color: #343435;
     color: #b6b6b2;
 }
