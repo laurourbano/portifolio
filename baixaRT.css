@@ -174,3 +174,15 @@ footer.light-mode {
 		display: none;
 	}
 }
+.a {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.a .botao{
+	width:100%;
+	height: 100%;
+}
+.a .estilo {
+	width: 100%;
+	height: 100%;
+}
