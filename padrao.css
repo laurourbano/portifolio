@@ -21,6 +21,11 @@ body.light-mode {
 	color: hsl(0, 3%, 15%);
 	transition: all 0.5s linear;
 }
+main {
+	justify-content: center;
+	align-items: center;
+
+}
 main div {
 	text-align: center;
 }
@@ -76,11 +81,11 @@ textarea {
 	padding: 5px;
 	border-radius: 8px;
 	width: 95%;
-	height: 7vh;
+	height: 4vh;
 	color: #bfc5c5;
 }
 p {
-	font-size: 14px;
+	font-size: 12px;
 	padding: 0px;
 }
 .dataFormatada {
@@ -94,9 +99,9 @@ p {
 	background-color: #164d6d;
 	color: #bfc5c5;
 	width: 95%;
-	height: 7vh;
+	height: 5vh;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
