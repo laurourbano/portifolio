@@ -13,93 +13,105 @@
 <body>
   <main>
     <nav class="navegacao">
-      <h5 id="page-title">Dark Mode ON</h5>
       <div>
+        <h3 id="page-title">Dark Mode ON</h3>
         <button aria-label="selecionar-modo" id="mode-selector">Dark Mode</button>
+        <div>
+          <h3 id="page-title"><a href="supervisao.html" target="_blank">Supervisão</a> </h3>
+          <h3 id="page-title"><a href="pessoafisica.html" target="_blank">Pessoa Física</a> </h3>
+          <h3 id="page-title"><a href="pessoajuridica.html" target="_blank">Pessoa Jurídica</a> </h3>
+        </div>
       </div>
     </nav>
     <h3 class="dataFormatada"></h3>
-    <h3 class="titulo-principal">Pareceres mais utilizados</h3>
     <hr>
+        <h3 class="titulo-principal">Pareceres mais utilizados</h3>
+
     <section>
-      <div>
-        <p>Local: 46 Situação: 2 Julgamento: 2</p>
-        <textarea class="area estilo" type="text" readonly>PROTOCOLO FINALIZADO.</textarea>
-        <button class="botao">FINALIZADO</button>
+      <div class="a">
+        <div>
+          <p>Local: 46 Situação: 2 Julgamento: 2</p>
+          <textarea class="area estilo" type="text" readonly>PROTOCOLO FINALIZADO.</textarea>
+          <button class="botao">FINALIZADO</button>
+        </div>
+        <div>
+          <p>Local: 46 Situação: 2 Julgamento: 2</p>
+          <textarea class="area estilo" id="texto3" type="text" readonly>PROCEDIMENTO TRATA-SE DE DESISTÊNCIA DA RT UMA VEZ QUE O INGRESSO SERIA APRECIADO PELO PLENÁRIO.
+  DESISTÊNCIA EFETIVADA.</textarea>
+          <button id="execCopy3" class="botao" ref="#texto3">DESISTÊNCIA</button>
+        </div>
+        <div>
+          <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
+          <textarea class="area estilo" id="texto1" type="text"
+            readonly>PROFISSIONAL PROTOCOLOU BAIXA EM PRAZO SUPERIOR A 30 DIAS, SENDO QUE SEU AFASTAMENTO FOI EM </textarea>
+          <button id="execCopy1" class="botao" ref="#texto1">TARDIA</button>
+        </div>
       </div>
-      <div>
-        <p>Local: 46 Situação: 2 Julgamento: 2</p>
-        <textarea class="area estilo" id="texto3" type="text" readonly>PROCEDIMENTO TRATA-SE DE DESISTÊNCIA DA RT UMA VEZ QUE O INGRESSO SERIA APRECIADO PELO PLENÁRIO.
-DESISTÊNCIA EFETIVADA.</textarea>
-        <button id="execCopy3" class="botao" ref="#texto3">DESISTÊNCIA</button>
+      <div class="a">
+        <div>
+          <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
+          <textarea class="area estilo" id="texto2" type="text"
+            readonly>NÃO APRESENTOU DOCUMENTOS OBRIGATÓRIOS PARA BAIXA NO PRAZO DE 30 DIAS DO PROTOCOLO.</textarea>
+          <button id="execCopy2" class="botao" ref="#texto2">30 DIAS</button>
+        </div>
+        <div>
+          <p>Local: 46 Situação: 4 Julgamento: 21</p>
+          <textarea class="area estilo" type="text" readonly>*** FAVOR NÃO DUPLICAR PROTOCOLOS ***</textarea>
+          <button class="botao">DUPLICADO</button>
+        </div>
+        <div>
+          <p>RENOMEAR</p>
+          <textarea class="area data" type="text" readonly>Baixa de RT Web_</textarea>
+          <button class="botao">RENOMEAR</button>
+        </div>
       </div>
-      <div>
-        <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
-        <textarea class="area estilo" id="texto1" type="text"
-          readonly>PROFISSIONAL PROTOCOLOU BAIXA EM PRAZO SUPERIOR A 30 DIAS, SENDO QUE SEU AFASTAMENTO FOI EM </textarea>
-        <button id="execCopy1" class="botao" ref="#texto1">TARDIA</button>
-      </div>
-      <div>
-        <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
-        <textarea class="area estilo" id="texto2" type="text"
-          readonly>NÃO APRESENTOU DOCUMENTOS OBRIGATÓRIOS PARA BAIXA NO PRAZO DE 30 DIAS DO PROTOCOLO.</textarea>
-        <button id="execCopy2" class="botao" ref="#texto2">30 DIAS</button>
-      </div>
-      <div>
-        <p>Local: 46 Situação: 4 Julgamento: 21</p>
-        <textarea class="area estilo" type="text" readonly>*** FAVOR NÃO DUPLICAR PROTOCOLOS ***</textarea>
-        <button class="botao">DUPLICADO</button>
-      </div>
-      <div>
-        <p>RENOMEAR</p>
-        <textarea class="area data" type="text" readonly>Baixa de RT Web_</textarea>
-        <button class="botao">RENOMEAR</button>
-      </div>
-      <div>
-        <p>Local: 46 Situação: 25 Julgamento: 18 Encaminhamento: 32</p>
-        <textarea class="area estilo" id="texto5" type="text" readonly>- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
-- FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA EMPRESA 
-OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
-OU
-- CASO AINDA NÃO POSSUA TODOS OS DOCUMENTOS, PODERÁ APRESENTAR  FORMULÁRIO DE REQUERIMENTO PREENCHIDO 
-E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL* (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO);
+      <div class="a destaque">
+        <div>
+          <p>Local: 46 Situação: 25 Julgamento: 18 Encaminhamento: 32</p>
+          <textarea class="area estilo" id="texto5" type="text" readonly>- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
+  - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA EMPRESA 
+  OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
+  OU
+  - CASO AINDA NÃO POSSUA TODOS OS DOCUMENTOS, PODERÁ APRESENTAR  FORMULÁRIO DE REQUERIMENTO PREENCHIDO 
+  E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL* (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO);
 
-- FALTOU APRESENTAR A CTPS COM ANOTAÇÃO/DECLARAÇÃO DA TRANSFERÊNCIA, INDICANDO A DATA DA TRANSFERÊNCIA E O CNPJ 
-PARA ONDE FOI TRANSFERIDO; (DOCUMENTO ASSINADO PELA EMPRESA)
-- FALTA ASSINATURA, DO REPRESENTANTE LEGAL, NO REQUERIMENTO DE BAIXA PARA BAIXAR COM DOCUMENTOS PENDENTES;
+  - FALTOU APRESENTAR A CTPS COM ANOTAÇÃO/DECLARAÇÃO DA TRANSFERÊNCIA, INDICANDO A DATA DA TRANSFERÊNCIA E O CNPJ 
+  PARA ONDE FOI TRANSFERIDO; (DOCUMENTO ASSINADO PELA EMPRESA)
+  - FALTA ASSINATURA, DO REPRESENTANTE LEGAL, NO REQUERIMENTO DE BAIXA PARA BAIXAR COM DOCUMENTOS PENDENTES;
 
-* DEVERÁ ENCAMINHAR OS DOCUMENTOS NO PRAZO DE 01 (UM) DIA ÚTIL, PELO MENU DE PROTOCOLOS (TELA INICIAL), 
-PROTOCOLOS AGUARDANDO RESPOSTA.
-FAVOR CONSULTAR PASSO A PASSO NO LINK https://www.crf-pr.org.br/noticia/visualizar/46459
-***LEMBRANDO QUE MARCAR NO FORMULÁRIO QUE NÃO ESTÁ APRESENTANDO ALGUM DOCUMENTO, NÃO ISENTA DE 
-APRESENTAÇÃO POSTERIOR (EM ATÉ 30 DIAS) CONFORME DESCRITO NO FORMULÁRIO.</textarea>
-        <button id="execCopy5" class="botao" ref="#texto5">FALTA</button>
-      </div>
+  * DEVERÁ ENCAMINHAR OS DOCUMENTOS NO PRAZO DE 01 (UM) DIA ÚTIL, PELO MENU DE PROTOCOLOS (TELA INICIAL), 
+  PROTOCOLOS AGUARDANDO RESPOSTA.
+  FAVOR CONSULTAR PASSO A PASSO NO LINK https://www.crf-pr.org.br/noticia/visualizar/46459
+  ***LEMBRANDO QUE MARCAR NO FORMULÁRIO QUE NÃO ESTÁ APRESENTANDO ALGUM DOCUMENTO, NÃO ISENTA DE 
+  APRESENTAÇÃO POSTERIOR (EM ATÉ 30 DIAS) CONFORME DESCRITO NO FORMULÁRIO.</textarea>
+          <button id="execCopy5" class="botao" ref="#texto5">FALTA</button>
+        </div>
 
-      <div>
-        <p>Local: 46 Situação: 25 Julgamento: 2</p>
-        <textarea class="area estilo" id="texto6" type="text" readonly>DOCUMENTO FALTANTES:
-- FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA 
-EMPRESA OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
-- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
+        <div>
+          <p>Local: 46 Situação: 25 Julgamento: 2</p>
+          <textarea class="area estilo" id="texto6" type="text" readonly>DOCUMENTO FALTANTES:
+  - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA 
+  EMPRESA OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
+  - FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
 
-- FALTOU APRESENTAR A CTPS COM ANOTAÇÃO/DECLARAÇÃO DA TRANSFERÊNCIA, INDICANDO A DATA DA TRANSFERÊNCIA E O CNPJ 
-PARA ONDE FOI TRANSFERIDO; (DOCUMENTO ASSINADO PELA EMPRESA)
+  - FALTOU APRESENTAR A CTPS COM ANOTAÇÃO/DECLARAÇÃO DA TRANSFERÊNCIA, INDICANDO A DATA DA TRANSFERÊNCIA E O CNPJ 
+  PARA ONDE FOI TRANSFERIDO; (DOCUMENTO ASSINADO PELA EMPRESA)
 
-***PRAZO PARA APRESENTAR COMPLEMENTAÇÃO DE DOCUMENTOS – 30 DIAS (CORRIDOS) DO PROTOCOLO***
+  ***PRAZO PARA APRESENTAR COMPLEMENTAÇÃO DE DOCUMENTOS – 30 DIAS (CORRIDOS) DO PROTOCOLO***
 
-ATENÇÃO. REALIZADA A BAIXA DE RESPONSABILIDADE TÉCNICA DO ESTABELECIMENTO EM CARÁTER ***PROVISÓRIO***. 
-O PROFISSIONAL ESTÁ CIENTE DE QUE RESPONDERÁ POR TODAS AS INFORMAÇÕES PRESTADAS, E QUE NO PRAZO MÁXIMO 
-DE 30 (TRINTA) DIAS DEVERÁ APRESENTAR OS DOCUMENTOS FALTANTES, SOB PENA DE RESPONDER A PROCESSO ÉTICO DISCIPLINAR.
+  ATENÇÃO. REALIZADA A BAIXA DE RESPONSABILIDADE TÉCNICA DO ESTABELECIMENTO EM CARÁTER ***PROVISÓRIO***. 
+  O PROFISSIONAL ESTÁ CIENTE DE QUE RESPONDERÁ POR TODAS AS INFORMAÇÕES PRESTADAS, E QUE NO PRAZO MÁXIMO 
+  DE 30 (TRINTA) DIAS DEVERÁ APRESENTAR OS DOCUMENTOS FALTANTES, SOB PENA DE RESPONDER A PROCESSO ÉTICO DISCIPLINAR.
 
-– PARA APRESENTAR OS DOCUMENTOS O PROFISSIONAL DEVERÁ ACESSAR O CRF EM CASA E “EM PROTOCOLOS AGUARDANDO 
-RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
-        <button id="execCopy6" class="botao" ref="#texto6">PENDENTE</button>
-      </div>
-      <div>
-        <p>Local: 46 Situação: 3 Julgamento: 3</p>
-        <textarea class="area dataIndeferimento" id="texto7" type="text" readonly></textarea>
-        <button id="execCopy7" class="botao" ref="#texto7">INDEFERIDO</button>
+  – PARA APRESENTAR OS DOCUMENTOS O PROFISSIONAL DEVERÁ ACESSAR O CRF EM CASA E “EM PROTOCOLOS AGUARDANDO 
+  RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
+          <button id="execCopy6" class="botao" ref="#texto6">PENDENTE</button>
+        </div>
+        <div>
+          <p>Local: 46 Situação: 3 Julgamento: 3</p>
+          <textarea class="area dataIndeferimento" id="texto7" type="text" readonly></textarea>
+          <button id="execCopy7" class="botao" ref="#texto7">INDEFERIDO</button>
+        </div>
       </div>
 
       <div class="a">
@@ -141,10 +153,10 @@ RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
           <textarea class="area estilo" id="texto7" type="text" readonly>9436</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">COMUNICADO/ CONSTATAÇÃO DE DESLIGAMENTO DA RT</button>
         </div>
-        <div>
+        <!--<div>
           <textarea class="area estilo" id="texto7" type="text" readonly></textarea>
           <button id="execCopy7" class="botao" ref="#texto7"></button>
-        </div>
+        </div>-->
       </div>
 
     </section>
@@ -155,7 +167,7 @@ RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
   <script src="main.js"></script>
   <script src="data.js"></script>
   <script src="copia.js"></script>
-
+.
 </body>
 
 </html>
