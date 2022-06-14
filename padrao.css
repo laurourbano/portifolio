@@ -70,12 +70,12 @@ div .nav-menu {
 	cursor: pointer;
 }
 .nav-menu.light-mode {
-	background-color: #e5e8e8;
+	background-color: #565b61;
 	color: #4e545c;
 	cursor: pointer;
 }
 .nav-menu.light-mode:hover {
-	background-color: #565b61;
+	background-color: #333;
 	color: #e5e8e8;
 	cursor: pointer;
 }
