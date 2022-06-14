@@ -34,26 +34,35 @@ main section div {
 	padding: 5px;
 	grid-template-columns: 1fr;
 }
-main section div:nth-child(7) {
+.destaque div:nth-child(1) {
 	background-color: rgba(188, 188, 0, 0.5);
 }
-main section div:nth-child(8) {
+.destaque div:nth-child(2) {
 	background-color: rgba(255, 140, 0, 0.6);
 }
-main section div:nth-child(9) {
+.destaque div:nth-child(3) {
 	background-color: rgba(255, 10, 10, 0.4);
 }
 nav {
-	justify-content: space-evenly;
-	right: 10px;
+	display: flex;
+
 	align-items: center;
 	opacity: 0.6;
 	background-color: #8d9797;
 	color: #000401;
+	padding: 10px;
+
 }
 nav div{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
+
+}
+nav div div a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
 }
 .titulo-principal {
 	background-color: #8d9797;
@@ -83,13 +92,13 @@ textarea {
 	font-size: 10px;
 	padding: 5px;
 	border-radius: 8px;
-	width: 90%;
-	height: 50px;
+	width: 95%;
+	height: 60px;
 	color: #bfc5c5;
 }
 p {
 	font-size: 12px;
-	padding: 0px;
+	margin: 5px;
 }
 .dataFormatada {
 	display: inline;
@@ -100,10 +109,10 @@ p {
 	background-color: #164d6d;
 	margin: 5px;
 	color: #bfc5c5;
-	width: 90%;
-	height: 200px;
+	width: 95%;
+	height: 60px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 10px;
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
@@ -185,11 +194,4 @@ footer.light-mode {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-.a .botao{
-	width:100%;
-	height: 100%;
-}
-.a .estilo {
-	width: 100%;
-	height: 100%;
-}
+
