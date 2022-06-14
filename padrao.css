@@ -49,13 +49,13 @@ nav {
 	justify-content: center;
 	align-items: center;
 	opacity: 0.6;
-	background-color: #8d9797;
+	background-color: #787878;
 	color: #000401;
 	padding: 0 10px;
 }
 div .nav-menu {
 	align-items: center;
-	background-color: #4e545c;
+	background-color: #a1a1a1;
 	border: none;
 	border-radius: 5px;
 	color: #e5e8e8;
@@ -66,16 +66,16 @@ div .nav-menu {
 	transition: all 0.5s linear;
 }
 .nav-menu:hover {
-	background-color: #333;
+	background-color: rgb(133, 133, 133);
 	cursor: pointer;
 }
 .nav-menu.light-mode {
-	background-color: #565b61;
+	background-color: #1d1d1d;
 	color: #4e545c;
 	cursor: pointer;
 }
 .nav-menu.light-mode:hover {
-	background-color: #333;
+	background-color: rgb(156, 156, 156);
 	color: #e5e8e8;
 	cursor: pointer;
 }
@@ -104,13 +104,13 @@ nav div div a {
 	grid-template-columns: 1fr 1fr;
 }
 .titulo-principal {
-	background-color: #8d9797;
+	background-color: #747474;
 	color: #000401;
 	width: 100%;
 	height: 40px;
 }
 nav.light-mode, .titulo-principal.light-mode {
-	background-color: #4e545c;
+	background-color: #747474;
 	color: #e5e8e8;
 	transition: all 0.5s linear;
 }
@@ -177,17 +177,19 @@ p {
 }
 #mode-selector {
 	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
 	margin: 0 auto;
 	height: 40px;
 	width: 100px;
 	border: none;
-	background-color: #4e545c;
-	color: #e5e8e8;
+	background-color: #555;
+	color: #fff;
 	transition: all 0.5s linear;
 	cursor: pointer;
 }
 #mode-selector:hover {
-	background-color: #333;
+	background-color: #999;
 	cursor: pointer;
 }
 #mode-selector.light-mode {
@@ -196,7 +198,7 @@ p {
 	cursor: pointer;
 }
 #mode-selector.light-mode:hover {
-	background-color: #565b61;
+	background-color: #747474;
 	color: #e5e8e8;
 	cursor: pointer;
 }
