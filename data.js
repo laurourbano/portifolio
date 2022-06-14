@@ -36,7 +36,16 @@ E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL*
 (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO).
 - FALTA ASSINATURA, DO REPRESENTANTE LEGAL, NO REQUERIMENTO DE BAIXA PARA BAIXAR SEM DOCUMENTOS;`);
 
-var time = new Date('2014-03-14');
-var outraData = new Date();
-outraData.setDate(time.getDate() + 160); // Adiciona 3 dias
-console.log(outraData);
+/*
+são declaradas constantes para os prazos;
+o usuário seleciona a data;
+o valor é guardado em uma variável;
+
+*/
+var input = document.querySelector("#data");
+var prazo = document.querySelector(".prazo");
+var trinta = new Date();
+trinta.setDate(trinta.getDate() + 30); // Adiciona 3 dias
+input.addEventListner("input", prazo.value){
+    return prazo.innerHTML = prazo.value;
+};
