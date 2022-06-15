@@ -46,6 +46,6 @@ var input = document.querySelector("#data");
 var prazo = document.querySelector(".prazo");
 var trinta = new Date();
 trinta.setDate(trinta.getDate() + 30); // Adiciona 3 dias
-input.addEventListner("input", prazo.value){
+input.addEventListener("input", prazo.value){
     return prazo.innerHTML = prazo.value;
 };
