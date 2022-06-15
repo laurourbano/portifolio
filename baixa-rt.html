@@ -8,6 +8,7 @@
   <title>Baixa de RT</title>
   <link rel="shortcut icon" href="crf.jpg" type="image/x-icon">
   <link rel="stylesheet" href="padrao.css">
+  <link rel="stylesheet" href="baixart.css">
 </head>
 
 <body>
@@ -26,17 +27,17 @@
     </nav>
     <h3 class="dataFormatada"></h3>
     <hr>
-        <h3 class="titulo-principal">Parecer procedimentos de Baixa de Responsabilidade Técnica</h3>
+    <h3 class="titulo-principal">Parecer procedimentos de Baixa de Responsabilidade Técnica</h3>
 
-    <section>
+    <section class="section-baixa">
       <div class="a">
         <div>
-          <p>Local: 46 Situação: 2 Julgamento: 2</p>
+          <h5>Local: 46 Situação: 2 Julgamento: 2</p>
           <textarea class="area estilo" type="text" readonly>PROTOCOLO FINALIZADO.</textarea>
           <button class="botao">FINALIZADO</button>
         </div>
         <div>
-          <p>Local: 46 Situação: 2 Julgamento: 2</p>
+          <h5>Local: 46 Situação: 2 Julgamento: 2</p>
           <textarea class="area estilo" id="texto3" type="text" readonly>PROCEDIMENTO TRATA-SE DE DESISTÊNCIA DA RT UMA VEZ QUE O INGRESSO SERIA APRECIADO PELO PLENÁRIO.
 DESISTÊNCIA EFETIVADA.</textarea>
           <button id="execCopy3" class="botao" ref="#texto3">DESISTÊNCIA</button>
@@ -44,13 +45,13 @@ DESISTÊNCIA EFETIVADA.</textarea>
       </div>
       <div class="a">
         <div>
-          <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
+          <h5>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
           <textarea class="area estilo" id="texto1" type="text"
             readonly>PROFISSIONAL PROTOCOLOU BAIXA EM PRAZO SUPERIOR A 30 DIAS, SENDO QUE SEU AFASTAMENTO FOI EM </textarea>
           <button id="execCopy1" class="botao" ref="#texto1">TARDIA</button>
         </div>
         <div>
-          <p>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
+          <h5>Local: 46 Situação: 10 Julgamento: 28 Encaminhar: 11</p>
           <textarea class="area estilo" id="texto2" type="text"
             readonly>NÃO APRESENTOU DOCUMENTOS OBRIGATÓRIOS PARA BAIXA NO PRAZO DE 30 DIAS DO PROTOCOLO.</textarea>
           <button id="execCopy2" class="botao" ref="#texto2">30 DIAS</button>
@@ -58,19 +59,19 @@ DESISTÊNCIA EFETIVADA.</textarea>
       </div>
       <div class="a">
         <div>
-          <p>Local: 46 Situação: 4 Julgamento: 21</p>
+          <h5>Local: 46 Situação: 4 Julgamento: 21</p>
           <textarea class="area estilo" type="text" readonly>*** FAVOR NÃO DUPLICAR PROTOCOLOS ***</textarea>
           <button class="botao">DUPLICADO</button>
         </div>
         <div>
-          <p>RENOMEAR</p>
+          <h5>RENOMEAR</p>
           <textarea class="area data" type="text" readonly>Baixa de RT Web_</textarea>
           <button class="botao">RENOMEAR</button>
         </div>
       </div>
       <div class="a destaque">
         <div>
-          <p>Local: 46 Situação: 25 Julgamento: 18 Encaminhamento: 32</p>
+          <h5>Local: 46 Situação: 25 Julgamento: 18 Encaminhamento: 32</p>
           <textarea class="area estilo" id="texto5" type="text" readonly>- FALTA DECLARAÇÃO DE BAIXA DA VIGILÂNCIA SANITÁRIA;
 - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA EMPRESA 
 OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
@@ -91,7 +92,7 @@ APRESENTAÇÃO POSTERIOR (EM ATÉ 30 DIAS) CONFORME DESCRITO NO FORMULÁRIO.</te
         </div>
 
         <div>
-          <p>Local: 46 Situação: 25 Julgamento: 2</p>
+          <h5>Local: 46 Situação: 25 Julgamento: 2</p>
           <textarea class="area estilo" id="texto6" type="text" readonly>DOCUMENTO FALTANTES:
 - FALTA QUEBRA DE VÍNCULO DE TRABALHO; (PÁGINA DA CTPS DO CONTRATO COM DATA DE SAÍDA E ASSINATURA DA 
 EMPRESA OU RESCISÃO/DISTRATO COM ASSINATURA DA EMPRESA E DO PROFISSIONAL);
@@ -111,12 +112,12 @@ RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
           <button id="execCopy6" class="botao" ref="#texto6">PENDENTE</button>
         </div>
         <div>
-          <p>Local: 46 Situação: 3 Julgamento: 3</p>
+          <h5>Local: 46 Situação: 3 Julgamento: 3</p>
           <textarea class="area dataIndeferimento" id="texto7" type="text" readonly></textarea>
           <button id="execCopy7" class="botao" ref="#texto7">INDEFERIDO</button>
         </div>
         <div>
-          <p>Prazos</p>
+          <h5>Prazos</p>
           <input type="date" name="data" id="data">
           <span></span>
         </div>
@@ -124,22 +125,22 @@ RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
 
       <div class="a">
         <div >
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>14</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM PROF COM PRAZO ATE:</button>
         </div>
         <div>
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>16</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM SUBST COM PRAZO ATE:</button>
         </div>
         <div>
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>9453</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM ASSISTÊNCIA TÉCNICA COM PRAZO ATÉ:</button>
         </div>
         <div >
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>19</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM PROFISSIONAL - AUTUAR</button>
         </div>
@@ -148,22 +149,22 @@ RESPOSTA” E ANEXAR O DOCUMENTO FALTANTE.</textarea>
       <div class="a">
 
         <div>
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>21</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM PROF AUTUAR:</button>
         </div>
         <div>
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>9454</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM ASSISTÊNCIA TÉCNICA AUTUAR:</button>
         </div>
         <div >
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>9464</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">SEM DIRETOR TECNICO -  C/ ASSISTÊNCIA FARMACÊUTICA</button>
         </div>
         <div>
-          <p>Lançamento de Status</p>
+          <h5>Lançamento de Status</p>
           <textarea class="area estilo" id="texto7" type="text" readonly>9436</textarea>
           <button id="execCopy7" class="botao" ref="#texto7">COMUNICADO/ CONSTATAÇÃO DE DESLIGAMENTO DA RT</button>
         </div>
