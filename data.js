@@ -1,20 +1,20 @@
 
-const data = document.querySelector(".data");
-const dia = new Date().getDate();
-const mes = new Date().getMonth() + 1;
-const ano = new Date().getFullYear();
-const dataAtual = ano+"_"+mes+"_"+dia;
+let data = document.querySelector(".data");
+let dia = new Date().getDate(); if(dia<10){dia='0'+dia};
+let mes = new Date().getMonth() + 1; if(mes<10){mes='0'+mes};
+let ano = new Date().getFullYear();
+let dataAtual = ano+"_"+mes+"_"+dia;
 data.innerHTML += dataAtual;
 
-const dataFormatada = document.querySelector(".dataFormatada");
-const dataNova = (dia)+"/"+(+mes)+"/"+ano;
+let dataFormatada = document.querySelector(".dataFormatada");
+let dataNova = (dia)+"/"+(+mes)+"/"+ano;
 dataFormatada.innerHTML += dataNova;
 
-const dataIndeferimento = document.querySelector(".dataIndeferimento");
-const dia1 = new Date().getDate();
-const mes1 = new Date().getMonth() + 1;
-const ano1 = new Date().getFullYear();
-const dataAtual1 = dia1+"/"+mes1+"/"+ano1;
+let dataIndeferimento = document.querySelector(".dataIndeferimento");
+let dia1 = new Date().getDate(); if(dia<10){dia='0'+dia};
+let mes1 = new Date().getMonth() + 1; if(mes<10){mes='0'+mes};
+let ano1 = new Date().getFullYear();
+let dataAtual1 = dia1+"/"+mes1+"/"+ano1;
 dataIndeferimento.innerHTML = (`INDEFERIDO REQUERIMENTO DE BAIXA.
 DOCUMENTOS SOLICITADOS PARA CORREÇÃO DO PROCEDIMENTO DE BAIXA DE RT NÃO FORAM ENVIADOS NO PRAZO DE 01 
 (UM) DIA ÚTIL DA RESPOSTA DO CRF-PR.
@@ -42,8 +42,20 @@ o usuário seleciona a data;
 o valor é guardado em uma variável;
 
 */
-var input = document.querySelector("#data");
-var prazo = document.querySelector(".prazo");
-var trinta = new Date();
-trinta.setDate(trinta.getDate() + 30); // Adiciona 3 dias
-input.addEventListener("input", prazo.innerHTML = input.value);
+  let input = document.querySelector('#data');
+  let prazo = document.querySelector('.prazo');
+  input.valueAsDate = new Date('0000-00-00');
+
+  input.addEventListener('input', () => {
+    let input1 = input.value.split("/");
+    let hj1 = input1[2]+"-"+input1[1]+"-"+input1[0];
+    let inputat = new Date(hj1);
+    inputat.setDate(inputat.getDate());
+    let myDate = new Date(hj1);
+    myDate.setDate(myDate.getDate() + 30);
+    let ano2 = myDate.getFullYear();
+    let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
+    let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
+    prazo.innerHTML = (((`${dia2}/${mes2}/${ano2}`)));
+
+  });  
