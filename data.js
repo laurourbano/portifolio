@@ -3,7 +3,7 @@ let data = document.querySelector(".data");
 let dia = new Date().getDate(); if(dia<10){dia='0'+dia};
 let mes = new Date().getMonth() + 1; if(mes<10){mes='0'+mes};
 let ano = new Date().getFullYear();
-let dataAtual = ano+"_"+mes+"_"+dia;
+let dataAtual = ano+"_"+mes+"_"+(dia-1);
 data.innerHTML += dataAtual;
 
 let dataFormatada = document.querySelector(".dataFormatada");
@@ -11,10 +11,7 @@ let dataNova = (dia)+"/"+(+mes)+"/"+ano;
 dataFormatada.innerHTML += dataNova;
 
 let dataIndeferimento = document.querySelector(".dataIndeferimento");
-let dia1 = new Date().getDate(); if(dia<10){dia='0'+dia};
-let mes1 = new Date().getMonth() + 1; if(mes<10){mes='0'+mes};
-let ano1 = new Date().getFullYear();
-let dataAtual1 = dia1+"/"+mes1+"/"+ano1;
+let dataAtual1 = (dia-2)+"/"+mes+"/"+ano;
 dataIndeferimento.innerHTML = (`INDEFERIDO REQUERIMENTO DE BAIXA.
 DOCUMENTOS SOLICITADOS PARA CORREÇÃO DO PROCEDIMENTO DE BAIXA DE RT NÃO FORAM ENVIADOS NO PRAZO DE 01 
 (UM) DIA ÚTIL DA RESPOSTA DO CRF-PR.
@@ -36,12 +33,6 @@ E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL*
 (MARCANDO TODOS OS DOCUMENTOS QUE FALTAM E O MOTIVO).
 - FALTA ASSINATURA, DO REPRESENTANTE LEGAL, NO REQUERIMENTO DE BAIXA PARA BAIXAR SEM DOCUMENTOS;`);
 
-/*
-são declaradas constantes para os prazos;
-o usuário seleciona a data;
-o valor é guardado em uma variável;
-
-*/
   let input = document.querySelector('#data');
   let prazo = document.querySelector('.prazo');
   input.valueAsDate = new Date('0000-00-00');
