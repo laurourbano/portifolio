@@ -223,6 +223,9 @@ footer.light-mode {
 	color: #e5e8e8;
 	transition: all 0.5s linear;
 }
+.prazo{
+	font-size: 24px;
+}
 @media only screen and (max-width: 420px) {
   body {
 		display: block;
