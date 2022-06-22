@@ -35,6 +35,9 @@ main section div {
 	padding: 5px;
 	grid-template-columns: 1fr;
 }
+.a div {
+	background-color: rgba(104, 100, 100, 0.5);
+}
 .destaque div:nth-child(1) {
 	background-color: rgba(188, 188, 0, 0.5);
 }
