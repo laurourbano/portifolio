@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: sans-serif;
+}
+.logo{
+  text-align: center;
+  margin-bottom: 00px;
+  
+}
+.logo img {
+  width: 200px;
+}
+.menu{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #777;
+}
+.menu a{
+  margin: 30px;
+}
+.secao-um, .secao-dois, .secao-tres {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto 20px auto;
+}
+.secao-um img {
+  width: 800px;
+  margin-bottom: 10px;
+}
+.secao-dois {
+  background-color: rgba(197, 131, 7, 0.904);
+  color: white;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.secao-dois img, .secao-tres img {
+  width: 50%;
+  margin: 10px 0;
+}
+.secao-dois p, .secao-tres p {
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+h1 {
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: normal;
+  color:rgba(197, 131, 7, 0.904);
+  margin-top: 0;
+}
+h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+span {
+  font-weight: bold;
+}
