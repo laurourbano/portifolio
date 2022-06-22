@@ -47,6 +47,6 @@ E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL*
     let ano2 = myDate.getFullYear();
     let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
     let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
-    prazo.innerHTML = (((`${dia2}/${mes2}/${ano2}`)));
-
+    let dataNoHtml = ((dia2 + "/" + mes2 + "/" + ano2));
+    prazo.innerHTML = (dataNoHtml);
   });  
