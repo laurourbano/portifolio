@@ -47,6 +47,70 @@ E ASSINADO *PELO REPRESENTANTE LEGAL E PELO PROFISSIONAL*
     let ano2 = myDate.getFullYear();
     let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
     let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
-    let dataNoHtml = ((dia2 + "/" + mes2 + "/" + ano2));
+    let dataNoHtml = (("30 dias em: " + dia2 + "/" + mes2 + "/" + ano2));
     prazo.innerHTML = (dataNoHtml);
   });  
+
+  let sessenta = document.querySelector('.sessenta');
+
+  input.addEventListener('input', () => {
+    let input1 = input.value.split("/");
+    let hj1 = input1[2]+"-"+input1[1]+"-"+input1[0];
+    let inputat = new Date(hj1);
+    inputat.setDate(inputat.getDate());
+    let myDate = new Date(hj1);
+    myDate.setDate(myDate.getDate() + 60);
+    let ano2 = myDate.getFullYear();
+    let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
+    let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
+    let dataNoHtml1 = (("60 dias em: " + dia2 + "/" + mes2 + "/" + ano2));
+    sessenta.innerHTML = (dataNoHtml1);
+  });
+
+  let noventa = document.querySelector('.noventa');
+
+  input.addEventListener('input', () => {
+    let input1 = input.value.split("/");
+    let hj1 = input1[2]+"-"+input1[1]+"-"+input1[0];
+    let inputat = new Date(hj1);
+    inputat.setDate(inputat.getDate());
+    let myDate = new Date(hj1);
+    myDate.setDate(myDate.getDate() + 90);
+    let ano2 = myDate.getFullYear();
+    let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
+    let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
+    let dataNoHtml2 = (("90 dias em: " + dia2 + "/" + mes2 + "/" + ano2));
+    noventa.innerHTML = (dataNoHtml2);
+  });
+  
+  let centoevinte = document.querySelector('.centoevinte');
+
+  input.addEventListener('input', () => {
+    let input1 = input.value.split("/");
+    let hj1 = input1[2]+"-"+input1[1]+"-"+input1[0];
+    let inputat = new Date(hj1);
+    inputat.setDate(inputat.getDate());
+    let myDate = new Date(hj1);
+    myDate.setDate(myDate.getDate() + 120);
+    let ano2 = myDate.getFullYear();
+    let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
+    let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
+    let dataNoHtml3 = (("120 dias em: " + dia2 + "/" + mes2 + "/" + ano2));
+    centoevinte.innerHTML = (dataNoHtml3);
+  });  
+  
+  let centoesessenta = document.querySelector('.centoesessenta');
+
+  input.addEventListener('input', () => {
+    let input1 = input.value.split("/");
+    let hj1 = input1[2]+"-"+input1[1]+"-"+input1[0];
+    let inputat = new Date(hj1);
+    inputat.setDate(inputat.getDate());
+    let myDate = new Date(hj1);
+    myDate.setDate(myDate.getDate() + 160);
+    let ano2 = myDate.getFullYear();
+    let dia2 = myDate.getDate(); if(dia2<10){dia2='0'+dia2};
+    let mes2 = (myDate.getMonth()+1); if(mes2<10){mes2='0'+mes2};
+    let dataNoHtml4 = (("160 dias em: " + dia2 + "/" + mes2 + "/" + ano2));
+    centoesessenta.innerHTML = (dataNoHtml4);
+  });

@@ -226,8 +226,9 @@ footer.light-mode {
 	color: #e5e8e8;
 	transition: all 0.5s linear;
 }
-.prazo{
-	font-size: 24px;
+.prazo, .sessenta, .noventa, .centoevinte, .centoesessenta {
+	font-size: 14px;
+	text-align: right;
 }
 @media only screen and (max-width: 420px) {
   body {
