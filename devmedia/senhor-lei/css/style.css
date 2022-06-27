@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+.topo {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.imagem-fundo {
+  min-height: 500px;
+  background-image: url('../img/capa.jpg');
+  background-size: cover;
+  padding-top: 50px;
+
+}
+.imagem-fundo h2 {
+  font-size: 28px;
+  width: 800px;
+  text-align: right;
+  margin: 0 auto;
+  font-weight: 900;
+}
+.imagem-fundo h3 {
+  width: 800px;
+  text-align: right;
+  margin: 0 auto;
+  font-weight: 700;
+}
