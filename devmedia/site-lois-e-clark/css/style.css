@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body {
+  height: 100%;
+}
+h2 {
+  padding: 25px 0;
+  text-align: center;
+}
+p {
+  line-height: 40px;
+  font-size: 20px;
+}
+.topo {
+  display: flex;
+  height: 100px;
+  background-color: rgb(40, 40, 150);
+  color: white;
+  align-items: center;
+}
+.topo div {
+  display: flex;
+}
+.limita-conteudo{
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.topo .limita-conteudo h1 {
+  margin: 0 30px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.topo .limita-conteudo a {
+  background-color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+.imagem-de-capa img{
+  width: 100%;
+  background-size: cover;
+}
+.disponibilidade img {
+  width: 100%;
+}
+.galeria {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 auto 20px auto;
+}
+.galeria img {
+  width: 33%;
+  margin: 10px;
+}
+.sombra-imagem {
+  box-shadow: 10px 10px 10px #969393;
+}
+.rodape footer h2{
+  display: flex;
+  background-color: rgb(40, 40, 150);
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
