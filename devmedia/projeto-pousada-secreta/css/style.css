@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.topo {
+  display: flex;
+  justify-content: space-between;
+}
+.topo a {
+  text-decoration: none;
+  color: #222;
+}
+.topo .menu {
+  text-transform:uppercase;
+}
+.topo a span {
+  color: #0d74db
+}
+.conteudo .container .fundo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/img-fundo.jpg');
+  height: 500px;
+
+}
+.fundo div {
+  background-color: white;
+  opacity: .5;
+  border: white;
+  text-align: center;
+}
