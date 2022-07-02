@@ -244,19 +244,33 @@ footer.light-mode {
 	font-size: 12px;
 	text-align: justify;
 }
-@media only screen and (max-width: 420px) {
-  body {
-		display: block;
+@media only screen and (max-width: 700px) {
+  	body {
+		grid-template-columns: 1fr;
 		font-size: 10px;
 		margin: 0;
 		padding: 0;
+		
+	}
+	main {
+		grid-template-columns: 1fr;
+
 	}
 	section {
-       display: block;
-			 margin: 0;
-			 padding: 0;
-  }
-	footer {
+		grid-template-columns: 1fr;
+	   margin: 0;
+	   padding: 0;
+	   width: 100%;
+	}
+	div {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	.a div {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	footer, nav {
 		display: none;
 	}
 }
