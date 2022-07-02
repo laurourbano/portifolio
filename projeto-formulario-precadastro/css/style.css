@@ -2,32 +2,76 @@
     box-sizing: border-box;
 }
 body {
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 input[type="file"] { 
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-label, button {
+input[type="radio"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"] {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
     padding: 10px;
     border: 1px solid #cecece;
     border-radius: 5px;
-    background-color: royalblue;
+    background-color: red;
     color: #fff;
     margin: 10px 0;
     width: 200px;
 }
-div {
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    margin: 10px 0;
+    width: 200px;
+}
+.wrapper {
     display: flex;
     justify-content: left;
+    border-bottom: 1px solid red;
     align-items: center;
     box-sizing: border-box;
-    border: 2px solid;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 10px 10px;
 }
-label:hover, button:hover {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+label:hover {
     background-color: blue;
+    cursor: pointer;
 }
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
  

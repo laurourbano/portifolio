@@ -12,28 +12,50 @@
 <body>
     <h3>Clique em cada botão para anexar seus documentos separadamente:</h3>
     <form action="submit">
-        <div>
-            <label for="rgrne">RG ou RNE: </label>
-            <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
-        </div>
-        <div>
-            <label for="cpf">CPF: </label>
-            <input type="file" ="Anexe cópia do CPF" name="CPF" id="cpf" title="CPF" required>
-        </div>
-        <div>
-            <label for="cpf">Título de Eleitor: </label>
-            <input type="file" name="tituloeleitor" id="rgrne" title="Título de Eleitor" required>
-        </div>
-        <div>
-            <label for="historico">Histórico da Graduação: </label>
-            <input type="file" name="historico" id="historico" title="Histórico da Graduação" required>
-        </div>
-        <div>
-            <label for="reservista">Reservista: </label>
-            <input type="file" name="Reservista" id="reservista" title="Reservista" required>
-        </div>
-        <button type="submit" title="Enviar">Enviar Pré-cadastro</button>
+        <div class="container">
+            <div class="wrapper">
+                <button for="">Nome: </button>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
 
+            </div>
+            <div class="wrapper">
+                <legend>Selecione: </legend>
+                <label for="feminino">feminino</label>
+                <input type="radio" name="sexo" id="feminino" title="feminino" required>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="sexo" id="masculino" title="masculino" required>
+                <label for="naobinario">não binário</label>
+                <input type="radio" name="sexo" id="naobinario" title="não binário" required checked>
+            </div>
+            <div class="wrapper">
+                <legend>Clique no botão para anexar </legend>
+                <label for="rgrne" title="RG/RNE">RG ou RNE: </label>
+                <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
+            </div>
+            <div class="wrapper">
+                <legend>Clique no botão para anexar </legend>
+                <label for="cpf" title="CPF">CPF: </label>
+                <input type="file" name="CPF" id="cpf" title="CPF" required>
+            </div>
+            <div class="wrapper">
+                <legend>Clique no botão para anexar </legend>
+                <label for="titulo-eleitor" title="Título de Eleitor">Título de Eleitor: </label>
+                <input type="file" name="titulo-eleitor" id="titulo-eleitor" title="Título de Eleitor" required>
+            </div>
+            <div class="wrapper">
+                <legend>Clique no botão para anexar </legend>
+                <label for="historico" title="Histórico da Graduação">Histórico da Graduação: </label>
+                <input type="file" name="historico" id="historico" title="Histórico da Graduação" required>
+            </div>
+            <div class="wrapper">
+                <legend>Clique no botão para anexar </legend>
+                <label for="reservista" title="Reservista">Reservista: </label>
+                <input type="file" name="Reservista" id="reservista" title="Reservista" required>
+            </div>
+            <button type="submit" title="Enviar">Enviar Pré-cadastro</button>
+        </div>
     </form>
 </body>
 
