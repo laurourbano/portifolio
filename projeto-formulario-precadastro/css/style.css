@@ -18,9 +18,11 @@ h3 {
 }
 input, button { 
     display:inline-flex;
+    width: 100%;
     border-radius: 5px;
 }
 label {
+    display: flex;
     border: 1px solid #cecece;
     border-radius: 5px;
     color: #000;
@@ -32,8 +34,13 @@ div {
     box-sizing: border-box;
     padding: 10px;
 }
+div label input:last-child {
+???
+}
 div p {
-    display:;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
     background-color: rgb(226, 188, 188);
 }
 button:hover, input[type="file"]:hover {
