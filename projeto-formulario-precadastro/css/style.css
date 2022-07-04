@@ -33,7 +33,7 @@ div {
     padding: 10px;
 }
 div p {
-    display: cover;
+    display:;
     background-color: rgb(226, 188, 188);
 }
 button:hover, input[type="file"]:hover {
