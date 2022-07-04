@@ -11,16 +11,21 @@
 <body>
     <h3>Clique em cada botão para anexar seus documentos separadamente:</h3>
     <form action="submit">
-        <div>
-            <label for="nome" title="nome">Nome: </label>
-            <input type="file" name="nome" id="nome" title="nome" required>
-        </div>
-        <div>
-            <label for="sexo" title="feminino">feminino</label>
-            <input type="radio" name="feminino" id="sexo" title="feminino" required>
-            <label for="sexo" title="masculino">masculino</label>
-            <input type="radio" name="masculino" id="sexo" title="masculino" required>
-        </div>
+        <fieldset>
+            <div>
+                <label for="nome" title="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" title="nome" required>
+            </div>
+            <div>
+                <legend>Sexo: </legend>
+                <label for="sexo">
+                    <input type="radio" name="sexo" id="sexo" title="masculino" required>
+                    masculino
+                    <input type="radio" name="sexo" id="sexo" title="feminino" required>
+                    feminino
+                </label>
+            </div>
+        </fieldset>
         <div>
             <label for="rgrne" title="RG/RNE">RG ou RNE: </label>
             <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
