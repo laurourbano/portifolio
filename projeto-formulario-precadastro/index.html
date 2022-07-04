@@ -13,24 +13,37 @@
     <h3>Clique em cada botão para anexar seus documentos separadamente:</h3>
     <form action="submit">
         <div>
-            <label for="rgrne">RG ou RNE: </label>
+            <label for="nome" title="nome">Nome: </label>
+            <input type="file" name="nome" id="nome" title="nome" required>
+        </div>
+        <div>
+            <label for="sexo" title="feminino">feminino</label>
+            <input type="radio" name="feminino" id="sexo" title="feminino" required>
+            <label for="sexo" title="masculino">masculino</label>
+            <input type="radio" name="masculino" id="sexo" title="masculino" required>
+        </div>
+        <div>
+            <label for="rgrne" title="RG/RNE">RG ou RNE: </label>
             <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
         </div>
         <div>
-            <label for="cpf">CPF: </label>
-            <input type="file" ="Anexe cópia do CPF" name="CPF" id="cpf" title="CPF" required>
+            <label for="cpf" title="CPF">CPF: </label>
+            <input type="file" name="CPF" id="cpf" title="CPF" required>
         </div>
         <div>
-            <label for="cpf">Título de Eleitor: </label>
-            <input type="file" name="tituloeleitor" id="rgrne" title="Título de Eleitor" required>
+            <label for="titulo-eleitor" title="Título de Eleitor">Título de Eleitor: </label>
+            <input type="file" name="titulo-eleitor" id="rgrne" title="Título de Eleitor" required>
         </div>
         <div>
-            <label for="historico">Histórico da Graduação: </label>
+            <label for="historico" title="Histórico da Graduação">Histórico da Graduação: </label>
             <input type="file" name="historico" id="historico" title="Histórico da Graduação" required>
         </div>
+        <div class="toggle">
+            <label for="reservista" title="reservista">Reservista: </label>
+            <input type="file" name="Reservista" id="reservista" title="reservista" required>
+        </div>
         <div>
-            <label for="reservista">Reservista: </label>
-            <input type="file" name="Reservista" id="reservista" title="Reservista" required>
+
         </div>
         <button type="submit" title="Enviar">Enviar Pré-cadastro</button>
 

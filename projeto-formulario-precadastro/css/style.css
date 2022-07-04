@@ -8,19 +8,17 @@ body {
 }
 input[type="file"] { 
     display:flex;
-    margin: 10px;
 }
 label, button {
     border: 1px solid #cecece;
     border-radius: 5px;
     background-color: royalblue;
     color: #fff;
-    margin: 20px;
 }
 div {
     box-sizing: border-box;
     border: 2px solid;
-    margin: 20px;
+    padding: 10px;
 }
 label:hover, button:hover {
     background-color: blue;
