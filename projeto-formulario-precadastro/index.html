@@ -17,6 +17,16 @@
         <section>
             <fieldset>
                 <div class="campo">
+                    <legend for="tipo" title="tipo"><strong>*Tipo: </strong>
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled>Selecione: </option>
+                            <option value="farmaceutico">Farmacêutico</option>
+                            <option value="tecnico">Técnico</option>
+                            <option value="oficial">Oficial de Farmácia</option>
+                        </select>
+                    </legend>
+                </div>
+                <div class="campo">
                     <label for="nome" title="nome"><strong>*Nome: </strong><input type="text" name="nome" id="nome" title="nome" required></label>
                 </div>
                 <div class="campo">
@@ -35,15 +45,71 @@
                     <details><p>Obrigatório foto de fundo branco padrão para documentos.</p></details>
                 </div>
                 <div class="campo">
+                    <label for="nome-pai" title="Nome do pai"><strong>Nome do Pai: </strong><input type="text" name="nome" id="nome" title="nome" required></label>
+                </div>
+                <div class="campo">
+                    <label for="nome-mae" title="nome-mae"><strong>*Nome da mãe: </strong><input type="text" name="nome" id="nome" title="nome" required></label>
+                </div>
+                <div class="campo">
+                    <legend for="tipo" title="tipo"><strong>*Estado Civil: </strong>
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled>Selecione: </option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="casado">Casado</option>
+                            <option value="viuvo">Viúvo</option>
+                            <option value="desquitado">Desquitado</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </legend>
+                </div>
+                <div class="campo">
+                    <legend for="tipo" title="tipo"><strong>*Nacionalidade: </strong>
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled>Selecione: </option>
+                            <option value="brasileira">Brasileira</option>
+                        </select>
+                    </legend>
+                </div>
+                <div class="campo">
+                    <legend for="tipo" title="tipo"><strong>*Naturalidade: </strong>
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled>Selecione: </option>
+                            <option value="parana">PR</option>
+                        </select>
+                    </legend>
+                </div>
+                <div class="campo">
+                    <legend for="tipo" title="tipo"><strong>*Instituição de Ensino: </strong>
+                        <select name="tipo" id="tipo" required>
+                            <option value="" disabled>Selecione: </option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </legend>
+                </div>
+                <div class="campo">
                     <legend>*Sexo:</legend>
                     <label for="feminino">
                         <input type="radio" name="sexo" id="feminino" title="feminino" checked required>feminino
                     </label>
                     <label for="masculino">
-                        <input type="radio" name="sexo" id="masculino" title="masculino" checked required>masculino
+                        <input type="radio" name="sexo" id="masculino" title="masculino" required>masculino
                     </label>
-                    <details><p>Deve ser declarado conforme consta em seu documento oficial de identidade.</p></details>
-                </div>
+                    <legend>*Genero: 
+                        <select name="genero" id="genero">
+                            <option value="" disabled>Selecione: </option>
+                            <option value="feminino" >feminino</option>
+                            <option value="masculino" >masculino</option>
+                            <option value="transgênero" >transgênero</option>
+                            <option value="travesti" >travesti</option>
+                            <option value="transsexual" >transsexual</option>
+                        </select>
+                    </legend>
+                    <details>
+                        <p>Deve ser declarado conforme consta em seu documento oficial de identidade.</p>
+                    </details>
+
+               </div>
                 <h4>Clique em cada botão para anexar seus documentos separadamente:</h4>
                 <div class="campo">
                     <label for="rgrne">*RG ou RNE: </label>
