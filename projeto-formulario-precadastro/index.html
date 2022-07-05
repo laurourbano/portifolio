@@ -9,63 +9,87 @@
 </head>
 
 <body>
-    <div>
-        <h3>Clique em cada botão para anexar seus documentos separadamente:</h3>
-        <p id="obrigatorios">campos obrigatórios</p>
+    <h1>Formulário de Inscrição</h1>
+    <div class="campo">
+        <p id="obrigatorios"><strong>*campos obrigatórios</strong></p>
     </div>
     <form action="submit">
         <section>
             <fieldset>
-                <div>
-                    <label for="nome" title="nome">Nome:<input type="text" name="nome" id="nome" title="nome"
-                            required></label>
+                <div class="campo">
+                    <label for="nome" title="nome"><strong>*Nome: </strong><input type="text" name="nome" id="nome" title="nome" required></label>
                 </div>
-                <div>
-                    <legend>Sexo:</legend>
-                    <label for="sexo">
-                        <input type="radio" name="sexo" id="sexo" title="feminino" checked required>
-                        feminino
-                        <input type="radio" name="sexo" id="sexo" title="masculino" required>
-                        masculino
-                    </label>
+                <div class="campo">
+                    <label for="nome" title="nome"><strong>Nome Social: </strong><input type="text" name="nome" id="nome" title="nome" required></label>
+                    <details><p>Caso queira adicionar seu nome social, preencha este campo.</p></details>
                 </div>
-                <div>
-                    <label for="rgrne">
-                        RG ou RNE:
-                        <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
-                    </label>
+                <div class="campo">
+                    <label for="data-nascimento" title="data de nascimento"><strong>*Data de nascimento: </strong><input type="date" name="data-nascimento" id="data-nascimento" title="nome" required></label>
                 </div>
-                <div>
-                    <label for="cpf">
-                        CPF:
-                        <input type="file" name="CPF" id="cpf" title="CPF" required>
+                <div class="campo">
+                    <label for="image">
+                        <img src="avatar-vazio.svg" alt="lauro" style="width:100px">
+                        <input type="file" required>
                     </label>
+                    <details><p>Obrigatório foto de fundo branco padrão para documentos.</p></details>
                 </div>
-                <div>
-                    <label for="titulo-eleitor">
-                        Título de Eleitor:
-                        <input type="file" name="titulo-eleitor" id="titulo-eleitor" title="Título de Eleitor" required>
+                <div class="campo">
+                    <legend>*Sexo:</legend>
+                    <label for="feminino">
+                        <input type="radio" name="sexo" id="feminino" title="feminino" checked required>feminino
                     </label>
+                    <label for="masculino">
+                        <input type="radio" name="sexo" id="masculino" title="masculino" checked required>masculino
+                    </label>
+                    <details><p>Deve ser declarado conforme consta em seu documento oficial de identidade.</p></details>
                 </div>
-                <div>
-                    <label for="historico">
-                        Histórico da Graduação:
-                        <input type="file" name="historico" id="historico" title="Histórico da Graduação" required>
-                    </label>
+                <h4>Clique em cada botão para anexar seus documentos separadamente:</h4>
+                <div class="campo">
+                    <label for="rgrne">*RG ou RNE: </label>
+                    <input type="file" name="RG/RNE" id="rgrne" title="RG/RNE" required>
+                    <details>
+                        <p>Brasileiros Natos ou Naturalizados: Registro Geral; </p>
+                        <p>Estrangeiros: Registro Nacional de Estrangeiro.</p>
+                        </p></details>
                 </div>
-                <div class="toggle">
-                    <label for="reservista">
-                        Reservista:
-                        <input type="file" name="Reservista" id="reservista" title="reservista" required>
-                    </label>
+                <div class="campo">
+                    <label for="cpf">*CPF: </label>
+                    <input type="file" name="CPF" id="cpf" title="CPF" required>
+                    <details><p>Poderá enviar a versão digital do CPF.</p></details>
+                </div>
+                <div class="campo">
+                    <label for="titulo-eleitor">*Título de Eleitor: </label>
+                    <input type="file" name="titulo-eleitor" id="titulo-eleitor" title="Título de Eleitor" required>
+                    <details><p>Poderá enviar a versão digital do Título de Eleitor.</p></details>
+                </div>
+                <div class="campo">
+                    <label for="Certidao">*Certidão de Conclusão do Curso: </label>
+                    <input type="file" name="Certidao" id="Certidao" title="Certidao de Conclusão de Curso" required>
+                    <details><p>Poderá enviar a versão digital da Certidão de Conclusão do Curso.</p></details>
+                </div>
+                <div class="campo">
+                    <label for="Diploma">*Diploma da Graduação: </label>
+                    <input type="file" name="Diploma" id="Diploma" title="Diploma da Graduação" required>
+                    <details><p>Poderá apresentar a versão digital do diploma e posteriormente apresentar o diploma no atendimento.</p></details>
+                </div>
+                <div class="campo">
+                    <label for="historico">*Histórico da Graduação: </label>
+                    <input type="file" name="historico" id="historico" title="Histórico da Graduação" required>
+                    <details><p>Poderá enviar a versão digital do Histórico da Graduação.</p></details>
+                </div>
+                <div class="toggle campo">
+                    <label for="reservista">*Reservista: </label>
+                    <input type="file" name="Reservista" id="reservista" title="reservista" required>
+                    <details><p>Obrigatório para pessoas do sexo masculino.</p></details>
                 </div>
             </fieldset>
-
+            <div>
+                <button type="submit" title="Enviar" autofocus>Enviar Pré-cadastro</button>
             </div>
-            <button type="submit" title="Enviar" autofocus>Enviar Pré-cadastro</button>
 
         </section>
     </form>
+
 </body>
 
 </html>
