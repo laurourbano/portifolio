@@ -32,13 +32,13 @@ main div {
 main section div {
 }
 .section-baixa div:nth-of-type(7) {
-	background-color: rgba(188, 188, 0, 0.5);
+	background-color: rgba(188, 188, 0, 0.2);
 }
 .section-baixa div:nth-of-type(8) {
-	background-color: rgba(255, 140, 0, 0.6);
+	background-color: rgba(255, 140, 0, 0.2);
 }
 .section-baixa div:nth-of-type(9) {
-	background-color: rgba(255, 10, 10, 0.4);
+	background-color: rgba(255, 10, 10, 0.2);
 }
 nav {
 	display: flex;
