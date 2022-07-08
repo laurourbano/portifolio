@@ -30,18 +30,14 @@ main div {
 	text-align: center;
 }
 main section div {
-	display: grid;
-	margin: 5px;
-	padding: 5px;
-	grid-template-columns: 1fr;
 }
-.destaque div:nth-child(1) {
+.section-baixa div:nth-of-type(7) {
 	background-color: rgba(188, 188, 0, 0.5);
 }
-.destaque div:nth-child(2) {
+.section-baixa div:nth-of-type(8) {
 	background-color: rgba(255, 140, 0, 0.6);
 }
-.destaque div:nth-child(3) {
+.section-baixa div:nth-of-type(9) {
 	background-color: rgba(255, 10, 10, 0.4);
 }
 nav {
@@ -85,7 +81,7 @@ nav div{
 	align-items: center;
 	margin-left: 20px;
 }
-main nav div div h3{
+nav div div h3{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,8 +96,6 @@ nav div div a {
 	align-items: center;
 }
 .a {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 }
 .titulo-principal {
 	background-color: #747474;
@@ -115,14 +109,10 @@ nav.light-mode, .titulo-principal.light-mode {
 	transition: all 0.5s linear;
 }
 .section-baixa {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
 	width: 100%;
 	max-height: 100vh;
 }
 .section-supervisao {
-	display: grid;
-	grid-template-columns: 1fr;
 	width: 100%;
 	max-height: 100vh;
 }
