@@ -2,159 +2,148 @@
 <!DOCTYPE html>
 <!--tag que referência qual a linguagem do arquivo-->
 <html lang="pt-br">
-  <!--tag de abertura das meta tags, ou seja, o que será passado como instrução ao navegador, mas que não é visual-->
-  <head>
-    <!--utiliza-se essa tag para que o navegador interprete caracteres especiais da linguagem, como acentos, cedilha... entre outros-->
-    <meta charset="UTF-8" />
-    <!--utiliza-se essa tag para que o conteúdo posa ser redimensionado em outros dispositivos, por exemplo: dispositivos móveis-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--link para fontes específicas-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!--link para fontes específicas-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <!--arquivo para reset do css, utilizado para tirar estilizações automáticas de navegadores-->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!--link para css externo-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <!--título da página que aparece na aba do navegador-->
-    <title>Portifólio do Lauro</title>
-    <!--favicon que aparece ao lado do título na aba do navegador-->
-    <link rel="icon" type="imagem/png" href="img/meufavicon.png" />
-  </head>
-  <!--tag utilizada para abrir o conteúdo que aparece no navegador-->
-  <body>
-    <!--tag semântica que declara o topo da tela-->
-    <header class="topo">
-        <!--tag semântica que declara a navegação em uma página-->
-      <nav class="topo-menu">
-        <a href="#"
-          ><h1><span>P</span>ortifólio do <span id="logo">L</span>auro</h1></a
-        >
+<!--tag de abertura das meta tags, ou seja, o que será passado como instrução ao navegador, mas que não é visual-->
 
-        <ul>
-          <li>
-            <a href="#sobre"> Sobre <img src="img/sobre.png" /> </a>
-          </li>
-          <li>
-            <a href="#cursos"> Cursos <img src="img/cursos.png" /> </a>
-          </li>
-          <li>
-            <a href="#experiencia">
-              Experiência <img src="img/experiencia.png" />
-            </a>
-          </li>
-          <li>
-            <a href="#contato"> Contato <img src="img/contato.png" /> </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <!--utiliza-se essa tag para que o navegador interprete caracteres especiais da linguagem, como acentos, cedilha... entre outros-->
+  <meta charset="UTF-8" />
+  <!--utiliza-se essa tag para que o conteúdo posa ser redimensionado em outros dispositivos, por exemplo: dispositivos móveis-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--link para fontes específicas-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!--link para fontes específicas-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
+    rel="stylesheet" />
+  <!--arquivo para reset do css, utilizado para tirar estilizações automáticas de navegadores-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--link para css externo-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!--título da página que aparece na aba do navegador-->
+  <title>Portifólio do Lauro</title>
+  <!--favicon que aparece ao lado do título na aba do navegador-->
+  <link rel="icon" type="imagem/png" href="img/meufavicon.png" />
+</head>
+<!--tag utilizada para abrir o conteúdo que aparece no navegador-->
 
-    <main>
-      <section id="sobre">
-        <h1>Programador / Desenvolvedor Júnior</h1>
+<body>
+  <!--tag semântica que declara o topo da tela-->
+  <header class="topo">
+    <!--tag semântica que declara a navegação em uma página-->
+    <nav class="topo-menu">
+      <a href="#">
+        <h1><span>P</span>ortifólio do <span id="logo">L</span>auro</h1>
+      </a>
 
+      <ul>
+        <li>
+          <a href="#sobre"> Sobre <img src="img/sobre.png" /> </a>
+        </li>
+        <li>
+          <a href="#cursos"> Cursos <img src="img/cursos.png" /> </a>
+        </li>
+        <li>
+          <a href="#experiencia">
+            Experiência <img src="img/experiencia.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#contato"> Contato <img src="img/contato.png" /> </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h1>Programador / Desenvolvedor Júnior</h1>
+
+      <p>
+        Apaixonado por tecnologia, graduando em Análise e Desenvolvimento de
+        Sistemas, pela Faculdades Cruzeiro do Sul. <br />
+        Bacharel em Administração de Empresas pela UniBrasil.
+      </p>
+
+      <a href="#sobre" class="botao"> Ver mais </a>
+    </section>
+    <section id="sobre">
+      <h2>Sobre</h2>
+
+      <p>
+        Olá, eu sou o Lauro e estou em busca de novos desafios. A partir de
+        janeiro de 2020 estou nessee novo projeto de me tornar o melhor
+        desenvolvedor da minha casa. Como sempre fui amante da tecnologia,
+        esse foi um caminho natural para mergulhar de cabeça.
+      </p>
+      <a href="#cursos" class="botao"> Acesse os cursos </a> e
+      <a href="#experiencia" class="botao"> Confira a experiência </a>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos finalizados</h2>
+
+      <ul class="lista-cursos">
+        <li>
+          <a href="#"><img src="img/icons8-angularjs-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-css3-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-logo-php-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-bootstrap-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-html-5-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-javascript-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-logo-java-coffee-cup-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-python-500.svg" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons8-typescript-500.svg" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experiencia">
+      <h2>Emprego atual:</h2>
+
+      <p>
+        Assistente administrativo na Autarquia Conselho Regional de Farmácia
+        do Estado do Paraná de outubro de 2012 até o momento
+      </p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <p>Vem falar com a gente</p>
+
+      <div>
+        <img src="img/icons8-telefone-celular-30.png" alt="celular" title="celular" />
+        <p><a href="tel:41998086077"> (41) 9 9808-6077 </a></p>
+        <img src="https://img.icons8.com/windows/32/000000/email.png" alt="email" />
         <p>
-          Apaixonado por tecnologia, graduando em Análise e Desenvolvimento de
-          Sistemas, pela Faculdades Cruzeiro do Sul. <br />
-          Bacharel em Administração de Empresas pela UniBrasil.
+          <a href="mailto:lauro@outlook.com.br"> lauro@outlook.com.br </a>
         </p>
+      </div>
+    </section>
+  </main>
 
-        <a href="#sobre" class="botao"> Ver mais </a>
-      </section>
-      <section id="sobre">
-        <h2>Sobre</h2>
+  <footer class="rodape">
+    <a href="#topo">VOLTAR</a>
 
-        <p>
-          Olá, eu sou o Lauro e estou em busca de novos desafios. A partir de
-          janeiro de 2020 estou nessee novo projeto de me tornar o melhor
-          desenvolvedor da minha casa. Como sempre fui amante da tecnologia,
-          esse foi um caminho natural para mergulhar de cabeça.
-        </p>
-        <a href="#cursos" class="botao"> Acesse os cursos </a> e
-        <a href="#experiencia" class="botao"> Confira a experiência </a>
-      </section>
+    <p>Desenvolvido por Lauro Otávio Urbano</p>
+  </footer>
+</body>
 
-      <section id="cursos">
-        <h2>Cursos finalizados</h2>
-
-        <ul class="lista-cursos">
-          <li>
-            <a href="#"><img src="img/icons8-angularjs-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-css3-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-logo-php-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-bootstrap-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-html-5-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-javascript-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="img/icons8-logo-java-coffee-cup-500.svg"
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-python-500.svg" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/icons8-typescript-500.svg" /></a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="experiencia">
-
-        <h2>Emprego atual:</h2>
-
-        <p>
-          Assistente administrativo na Autarquia Conselho Regional de Farmácia
-          do Estado do Paraná de outubro de 2012 até o momento
-        </p>
-      </section>
-
-      <section id="contato">
-
-        <h2>Contato</h2>
-
-        <p>Vem falar com a gente</p>
-
-        <div>
-
-          <img
-            src="img/icons8-telefone-celular-30.png"
-            alt="celular"
-            title="celular"
-          />
-          <p><a href="tel:41998086077"> (41) 9 9808-6077 </a></p>
-          <img
-            src="https://img.icons8.com/windows/32/000000/email.png"
-            alt="email"
-          />
-          <p>
-            <a href="mailto:lauro@outlook.com.br"> lauro@outlook.com.br </a>
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="rodape">
-
-      <a href="#topo">VOLTAR</a>
-
-      <p>Desenvolvido por Lauro Otávio Urbano</p>
-    </footer>
-  </body>
 </html>
