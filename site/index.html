@@ -29,121 +29,150 @@
 
 <body>
   <!--tag semântica que declara o topo da tela-->
-  <header class="topo">
+  <header id="topo">
     <!--tag semântica que declara a navegação em uma página-->
     <nav class="topo-menu">
-      <a href="#">
+      <a href="index.html">
         <h1><span>P</span>ortifólio do <span id="logo">L</span>auro</h1>
       </a>
-
-      <ul>
-        <li>
-          <a href="#sobre"> Sobre <img src="img/sobre.png" /> </a>
-        </li>
-        <li>
-          <a href="#cursos"> Cursos <img src="img/cursos.png" /> </a>
-        </li>
-        <li>
-          <a href="#experiencia">
-            Experiência <img src="img/experiencia.png" />
-          </a>
-        </li>
-        <li>
-          <a href="#contato"> Contato <img src="img/contato.png" /> </a>
-        </li>
-      </ul>
+      <div class="menu-item">
+        <ul class="lista">
+          <li class="item">
+            <a href="#sobre"><img src="img/sobre.png"/>Sobre</a>
+          </li>
+          <li class="item">
+            <a href="#cursos"><img src="img/cursos.png"/>Cursos</a>
+          </li>
+          <li class="item">
+            <a href="#experiencia"><img src="img/experiencia.png"/>Experiência</a>
+          </li>
+          <li class="item">
+            <a href="#contato"><img src="img/contato.png"/>Contato</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
     <section id="sobre">
-      <h1>Programador / Desenvolvedor Júnior</h1>
+      <div class="limita-secao">
+        <h1>Programador / Desenvolvedor Júnior</h1>
 
-      <p>
-        Apaixonado por tecnologia, graduando em Análise e Desenvolvimento de
-        Sistemas, pela Faculdades Cruzeiro do Sul. <br />
-        Bacharel em Administração de Empresas pela UniBrasil.
-      </p>
+        <p>
+          Apaixonado por tecnologia, graduando em Análise e Desenvolvimento de
+          Sistemas, pela Faculdades Cruzeiro do Sul. <br />
+          Bacharel em Administração de Empresas pela UniBrasil.
+        </p>
 
-      <a href="#sobre" class="botao"> Ver mais </a>
+        <a href="#sobre" class="botao"> Ver mais </a>
+      </div>
     </section>
     <section id="sobre">
-      <h2>Sobre</h2>
+      <div class="limita-secao">
+        <h2>Sobre</h2>
 
-      <p>
-        Olá, eu sou o Lauro e estou em busca de novos desafios. A partir de
-        janeiro de 2020 estou nessee novo projeto de me tornar o melhor
-        desenvolvedor da minha casa. Como sempre fui amante da tecnologia,
-        esse foi um caminho natural para mergulhar de cabeça.
-      </p>
-      <a href="#cursos" class="botao"> Acesse os cursos </a> e
-      <a href="#experiencia" class="botao"> Confira a experiência </a>
+        <p>
+          Olá, eu sou o Lauro e estou em busca de novos desafios. A partir de
+          janeiro de 2020 estou nessee novo projeto de me tornar o melhor
+          desenvolvedor da minha casa. Como sempre fui amante da tecnologia,
+          esse foi um caminho natural para mergulhar de cabeça.
+        </p>
+        <a href="#cursos" class="botao"> Acesse os cursos </a> e
+        <a href="#experiencia" class="botao"> Confira a experiência </a>
+      </div>
     </section>
 
     <section id="cursos">
-      <h2>Cursos finalizados</h2>
+      <div class="limita-secao">
+        <h2>Cursos finalizados</h2>
 
-      <ul class="lista-cursos">
-        <li>
-          <a href="#"><img src="img/icons8-angularjs-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-css3-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-logo-php-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-bootstrap-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-html-5-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-javascript-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-logo-java-coffee-cup-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-python-500.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons8-typescript-500.svg" /></a>
-        </li>
-      </ul>
+        <ul class="lista-cursos">
+          <li>
+            <a href="#"><img src="img/icons8-html-5-500.svg" /></a>
+            <label for="">Intermediário</label>
+            <progress value="75" max="100">Intermediário</progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-css3-500.svg" /></a>
+            <label for="">Intermediário</label>
+            <progress value="75" max="100">Intermediário</progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-javascript-500.svg" /></a>
+            <label for="">Intermediário</label>
+            <progress value="50" max="100"></progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-python-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="25" max="100"></progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-angularjs-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="10" max="100"></progress>
+
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-logo-php-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="10" max="100"></progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-bootstrap-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="10" max="100"></progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-logo-java-coffee-cup-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="10" max="100"></progress>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons8-typescript-500.svg" /></a>
+            <label for="">Iniciante</label>
+            <progress value="10" max="100">Iniciante</progress>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="experiencia">
-      <h2>Emprego atual:</h2>
+      <div class="limita-secao">
+        <h2>Emprego atual:</h2>
 
-      <p>
-        Assistente administrativo na Autarquia Conselho Regional de Farmácia
-        do Estado do Paraná de outubro de 2012 até o momento
-      </p>
+        <p>
+          Assistente administrativo na Autarquia Conselho Regional de Farmácia
+          do Estado do Paraná de outubro de 2012 até o momento
+        </p>
+      </div>
     </section>
 
     <section id="contato">
-      <h2>Contato</h2>
+      <div class="limita-secao">
+        <h2>Contato</h2>
 
-      <p>Vem falar com a gente</p>
+        <p>Vem falar com a gente</p>
 
-      <div>
-        <img src="img/icons8-telefone-celular-30.png" alt="celular" title="celular" />
-        <p><a href="tel:41998086077"> (41) 9 9808-6077 </a></p>
-        <img src="https://img.icons8.com/windows/32/000000/email.png" alt="email" />
-        <p>
-          <a href="mailto:lauro@outlook.com.br"> lauro@outlook.com.br </a>
-        </p>
+        <div>
+          <img src="img/icons8-telefone-celular-30.png" alt="celular" title="celular" />
+          <p><a href="tel:41998086077"> (41) 9 9808-6077 </a></p>
+          <img src="https://img.icons8.com/windows/32/000000/email.png" alt="email" />
+          <p>
+            <a href="mailto:lauro@outlook.com.br"> lauro@outlook.com.br </a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="rodape">
-    <a href="#topo">VOLTAR</a>
+    <div class="limita-secao">
+      <a href="#topo">VOLTAR AO INÍCIO DA PÁGINA</a>
 
-    <p>Desenvolvido por Lauro Otávio Urbano</p>
+      <p>Desenvolvido por Lauro Otávio Urbano</p>
+    </div>
   </footer>
 </body>
-
 </html>
