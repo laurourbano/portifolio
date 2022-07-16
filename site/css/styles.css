@@ -15,6 +15,11 @@
     align-items: center;
     padding: 10px 25px;
     background-color: #1a2b3c;
+    letter-spacing: .3vw;
+}
+.topo-menu a span {
+    color: red;
+    font-size: 62px;
 }
 .topo-menu a {
     text-decoration: none;
@@ -83,10 +88,10 @@ p {
     justify-content: start;
     flex-direction: column;
     width: 18%;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 .lista-cursos a img {
-    width: 50px;
+    width: 60px;
 }
 .progress {
     display: flex;
@@ -100,13 +105,16 @@ p {
     background-color: green;
     justify-content: start;
     width: 75%;
-    padding: 15px;
+    padding: 15px 0;
 }
 .iniciante {
     background-color: green;
     justify-content: start;
     width: 25%;
-    padding: 15px;
+    padding: 15px 0;
+}
+#contato div div {
+    display: flex;
 }
 /*rodapé da página com um link que volta ao começo da página*/
 .rodape {
