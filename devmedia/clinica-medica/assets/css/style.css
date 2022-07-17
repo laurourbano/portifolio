@@ -1,28 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .nav-menu {
   background-color: rgb(100, 154, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 0px 15px;
   font-size: 26px;
+  height: 15vh;
 }
 .nav-menu a {
   text-decoration: none;
   color: white;
-  padding: 5px;
+  padding: 0 5px;
 }
 #capa {
   background-image: url(../../assets/recepcao.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 600px;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,30 +37,111 @@
   font-size: 50px;
   padding: 0 0 0 20px;
 }
+#capa, #sobre, #horarios, #contato {
+  margin-bottom: 80px;
+}
 #horarios a {
-  padding: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
   background-color: rgb(100, 154, 255);
   text-decoration: none;
   color: white;
 }
 .limita-secao {
-  width: 80%;
-  margin: 80px auto;
+  width: 1024px;
+  margin: 0 auto;
 }
-p {
+section iframe {
+  width: 90%;
+  margin: 5%;
+}
+span {
+  font-weight: bold;
+  color: #777;
+}
+section p {
+  text-align: center;
   line-height: 32px;
+  color: #777;
 }
+spna
 h2, h3, h4, h5 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.quadro div {
-  display: flex;
-}
 .card {
   display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+  color: #777;
+}
+.card div {
   flex-direction: column;
-  width: calc((100% / 3) - 10px);
-
+  margin: 0 25px;
+  box-shadow: 2px 2px 15px #777;
+}
+.card div img {
+  width: 100%;
+}
+.card div p {
+  margin: 10px 0;
+}
+#horarios .quadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+#horarios {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.rodape{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(19, 134, 129);
+  display: flex;
+  align-items: center;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+  color:#fff;
+}
+#sobre {
+  display: flex;
+  line-height: 32px;
+  color: #777;
+  font-size: 18px;
+}
+h3 {
+  font-size: 32px;
+  color: #777;
+  margin: 20px 0;
+}
+#sobre div div {
+  display: flex;
+}
+#sobre div div img {
+  height: 400px;
+}
+#sobre div div div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h4 {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+h5 {
+  color: #777;
+  font-size: 22px;
+  margin: 20px 0 ;
 }
