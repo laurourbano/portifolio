@@ -50,7 +50,7 @@
 .limita-secao {
     width: 80%;
     margin: 0 auto;
-    height: 35vh;
+    height: 100%;
 }
 #sobre, #cursos, #experiencia, #contato {
     padding-top: 50px;
