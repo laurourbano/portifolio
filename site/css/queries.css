@@ -1,7 +1,9 @@
 @media (max-width:950px) {
+  .topo {
+    min-height: 500px;
+  }
   .topo-menu, .rodape{
     display: block;
-    letter-spacing: 0;
   }
 
   .topo-menu .menu-item .lista {

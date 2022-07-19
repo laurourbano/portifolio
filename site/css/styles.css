@@ -1,3 +1,8 @@
+:root {
+    --cor1: #bb9b83;
+    --cor2: #110d27;
+
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,17 +16,21 @@
 }
 
 /*topo da página com a barra de navegação do site*/
+header nav {
+    height: 35vh;
+  }
+
 .topo-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    background-color: #110d27;
+    background-color: var(--cor2);
     letter-spacing: .3vw;
 }
 
 .topo-menu a span {
-    color: #fb9b50;
+    color: var(--cor1);
     font-size: 62px;
 }
 
@@ -73,7 +82,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: #fb9b50;
+    background-color: var(--cor1);
     color: #222;
 }
 
@@ -97,8 +106,8 @@ section a:hover{
 }
 .botao {
     position: absolute;
-    bottom: 0;
-    left: 10px;
+    bottom: 20px;
+    left: auto;
 }
 .contato {
     display: flex;
@@ -158,18 +167,20 @@ p {
 
 /*rodapé da página com um link que volta ao começo da página*/
 .rodape {
+    display: flex;
+    justify-content: center;
     padding: 10px 25px;
-    background-color: #110d27;
+    background-color: var(--cor2);
     color: #ffffff;
+    position: relative;
 }
 
 .rodape a {
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    background-color: #333;
+    background-color: transparent;
     box-shadow: -5px 5px 5px #222;
-    border: .5px solid #444444;
     border-radius: 5px;
 }
 
@@ -181,7 +192,7 @@ p {
 .rodape div {
     display: flex;
     flex-direction: column;
-    height: 100px;
-    justify-content: space-evenly;
+    height: 30vh;
+    justify-content: center;
     align-items: center;
 }
