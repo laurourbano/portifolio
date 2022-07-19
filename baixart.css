@@ -43,3 +43,28 @@ height: 85vh;
 	width: 32%;
 	height: 150px;
 }
+@media screen and (max-width: 1050px) {
+	main {
+		display: block;
+	}
+	.section-baixa {
+		display: block;
+	}
+
+	.section-baixa div {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border:none;
+		box-sizing: border-box;
+		width: 33%;
+	}
+
+}
+@media screen and (max-width: 650px) {
+	.section-baixa div {
+
+		width: 50%;
+	}
+
+}
