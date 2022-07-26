@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div>
-      <header>
-        <a href="#Logo">Logo</a>
+    <div className='container container-componentes'>
+      <header className='Topo'>
+        <h1>Lauro Otávio Urbano</h1>
       </header>
     </div>
-  )
-};
+  );
+}
