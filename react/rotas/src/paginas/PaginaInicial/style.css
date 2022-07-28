@@ -1,0 +1,35 @@
+.conteudo-opcoes{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.conteudo-opcoes a {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.opcao-front-end{
+  background-color: #61dafb;
+  color: blue;
+  border-radius: 5px;
+  box-shadow: -5px 5px 10px blue;
+}
+
+.opcao-front-end:hover{
+  background-color: blue;
+  color: #61dafb;
+}
+
+.opcao-back-end{
+  background-color: #43853d;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: -5px 5px 10px #43853d;
+}
+
+.opcao-back-end:hover{
+  background-color: #fff;
+  color: #43853d;
+}

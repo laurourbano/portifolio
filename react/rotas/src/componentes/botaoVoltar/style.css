@@ -1,0 +1,22 @@
+.area-botao{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.botao-voltar {
+  padding: 20px;
+  text-decoration: none;
+
+  background-color: #f7df1e;
+  color: #000;
+  font-weight: 700;
+
+  border-radius: 5px;
+  box-shadow: -5px 5px 10px #000;
+
+}
+
+.botao-voltar:hover {
+  background-color: #000;
+  color: #f7df1e;
+}
