@@ -1,0 +1,54 @@
+/*Seção do Banner*/
+.Banner {
+  background-color: #F6DB76;
+  background-image: url('../../../public/assets/banner-home.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.Banner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 3px 3px 2px black;
+}/*Fim da Seção do Banner*/
+
+/*Seções com imagens*/
+.composicao-img-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+.composicao-img-conteudo img {
+  width: 50%;
+  height: 100%;
+}
+  .composicao-img-conteudo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11%;
+}
+.composicao-img-conteudo div h2 {
+  font-weight: 900;
+  font-size: 38px;
+}
+.composicao-img-conteudo div span {
+  margin-bottom: 52px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.composicao-img-conteudo div p {
+  font-size: 15px;
+}

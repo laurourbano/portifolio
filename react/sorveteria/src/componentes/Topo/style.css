@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  background-color: #F6DB76;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 40px;
+  padding: 30px 0;
+  color: #000;
+  font-weight: bold;
+}
+header div img {
+  width: 80px;
+  height: auto;
+}
