@@ -9,15 +9,15 @@ const Home = () => (
     <Topo />
 
     <main>
-        <section className='Banner'>
-          <div className='limitar-secao'>
+        <section className='secao-banner'>
+          <div className='texto-banner'>
             <h1>SORVETE ARTESANAL</h1>
           </div>
         </section>
 
-        <section className='composicao-img-conteudo'>
+        <section className='secao-nossos-sabores'>
           <img src="assets/banner-sabores.jpg" alt="sorvetes diversos" />
-          <div>
+          <div className='texto-secao-nossos-sabores'>
             <h2>NOSSOS SABORES</h2>
             <span>Novos e deliciosos!</span>
             <p>
@@ -30,8 +30,8 @@ const Home = () => (
           </div>
         </section>
 
-        <section className='composicao-img-conteudo'>
-          <div>
+        <section className='secao-nossos-eventos'>
+          <div className='texto-secao-nossos-eventos'>
               <h2>NOSSOS EVENTOS</h2>
               <span>Delicias com sorvete!</span>
               <p>
@@ -43,9 +43,9 @@ const Home = () => (
           <img src="assets/eventos-image.jpg" alt="mesa de festa" />
         </section>
 
-        <section className='composicao-img-conteudo'>
+        <section className='secao-sobre-nos'>
           <img src="assets/sobre-image.jpg" alt="pessoas comendo sorvete" />
-          <div>
+          <div className='texto-secao-sobre-nos'>
             <h2>SOBRE NÓS</h2>
             <span>Alegria em cada casquinha!</span>
             <p>

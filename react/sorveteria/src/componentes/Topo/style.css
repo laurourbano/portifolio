@@ -1,21 +1,45 @@
 header {
+  width:100%;
+  padding: 10px 20px;
   display: flex;
-  background-color: #F6DB76;
+  position: fixed;
+  top: 0;
+
+  z-index: 1;
+  background-color: rgb(249,219,121);
 }
 header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header div a {
-  text-decoration: none;
-  font-size: 18px;
-  margin-left: 40px;
-  padding: 30px 0;
-  color: #000;
-  font-weight: bold;
+header img {
+  width: auto;
+  height: 60px;
 }
-header div img {
-  width: 80px;
-  height: auto;
+header nav {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-topo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 662px) {
+  header div {
+    flex-direction: column;
+  }
+  header nav {
+    border-top: 1px solid grey;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  
 }

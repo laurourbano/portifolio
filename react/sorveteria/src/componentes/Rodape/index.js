@@ -3,7 +3,7 @@ import './style.css'
 
 const Rodape = () => (
   <footer>
-    <div className="limitar-secao">
+    <div className="limitar-secao container-logo-informacoes">
       <img src="assets/logo.png" alt="logomarca" />
       <div>
         <h3>ENDEREÇO</h3>
@@ -21,7 +21,7 @@ const Rodape = () => (
         <p>10:00 - 22:00</p>
       </div>
     </div>
-    <div>
+    <div className="limitar-secao direito-autoral">
       <p>Gelateria. Orgulhosamente desenvolvido por <span>Lauro Otávio Urbano</span></p>
     </div>
   </footer>
